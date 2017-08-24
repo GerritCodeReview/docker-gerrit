@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "bc502423_8ad7d52d",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2017-08-24T07:36:26Z",
+      "side": 1,
+      "message": "Better to say NNN where \u0027NNN\u0027 is the Gerrit version, otherwise we would need to update the README.md every time :-(",
+      "parentUuid": "883d1788_1a509a93",
+      "range": {
+        "startLine": 18,
+        "startChar": 51,
+        "endLine": 18,
+        "endChar": 57
+      },
+      "revId": "9d40e62f417d3a5a5d9a5d102d253f9fa489b41f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "571a1a0b_7ffda0c7",
         "filename": "README.md",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2017-08-24T06:57:53Z",
       "side": 1,
       "message": "external storage?",
+      "range": {
+        "startLine": 62,
+        "startChar": 85,
+        "endLine": 62,
+        "endChar": 93
+      },
+      "revId": "9d40e62f417d3a5a5d9a5d102d253f9fa489b41f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "67151f2a_0248a1b1",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2017-08-24T07:36:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "571a1a0b_7ffda0c7",
       "range": {
         "startLine": 62,
         "startChar": 85,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "60852f95_1ef83df9",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2017-08-24T07:36:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d71c650_5b583163",
+      "range": {
+        "startLine": 63,
+        "startChar": 45,
+        "endLine": 63,
+        "endChar": 47
+      },
+      "revId": "9d40e62f417d3a5a5d9a5d102d253f9fa489b41f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "08c9b6a9_3fdc6314",
         "filename": "README.md",
         "patchSetId": 1
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "caf4bcfc_e1f178af",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2017-08-24T07:36:26Z",
+      "side": 1,
+      "message": "Yes, let me split into title + paragraph.",
+      "parentUuid": "08c9b6a9_3fdc6314",
+      "range": {
+        "startLine": 207,
+        "startChar": 13,
+        "endLine": 207,
+        "endChar": 113
+      },
+      "revId": "9d40e62f417d3a5a5d9a5d102d253f9fa489b41f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "deba3f75_f33434c8",
         "filename": "README.md",
         "patchSetId": 1
@@ -105,6 +201,30 @@
       "writtenOn": "2017-08-24T06:57:53Z",
       "side": 1,
       "message": "\"Verify that your data is correct\"?",
+      "range": {
+        "startLine": 235,
+        "startChar": 0,
+        "endLine": 235,
+        "endChar": 21
+      },
+      "revId": "9d40e62f417d3a5a5d9a5d102d253f9fa489b41f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "001da194_e6f974a1",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2017-08-24T07:36:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "deba3f75_f33434c8",
       "range": {
         "startLine": 235,
         "startChar": 0,
