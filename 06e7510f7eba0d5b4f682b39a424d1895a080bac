@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "055aefb2_40d4f33b",
+        "filename": "Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2017-08-24T05:46:21Z",
+      "side": 1,
+      "message": "This looks like all centos specific things.",
+      "revId": "06e7510f7eba0d5b4f682b39a424d1895a080bac",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
