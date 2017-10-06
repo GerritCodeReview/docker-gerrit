@@ -39,14 +39,14 @@ version: '3'
 services:
   gerrit:
     image: gerritcodereview/gerrit
-  volumes:
-     - git-volume:/var/gerrit/git
-     - db-volume:/var/gerrit/db
-     - index-volume:/var/gerrit/index
-     - cache-volume:/var/gerrit/cache
-  ports:
-     - "29418:29418"
-     - "8080:8080"
+    volumes:
+       - git-volume:/var/gerrit/git
+       - db-volume:/var/gerrit/db
+       - index-volume:/var/gerrit/index
+       - cache-volume:/var/gerrit/cache
+    ports:
+       - "29418:29418"
+       - "8080:8080"
 
 volumes:
   git-volume:
