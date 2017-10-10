@@ -2,21 +2,26 @@ FROM ubuntu:16.04
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
-RUN echo "deb mirror://mirrorlist.gerritforge.com/deb gerrit contrib" > /etc/apt/sources.list.d/GerritForge.list
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1871F775
-
-# Allow remote connectivity and sudo
-RUN apt-get update
-RUN apt-key update
-RUN apt-get -y install openssh-client sudo
-
-# Install OpenJDK and Gerrit in two subsequent transactions
-# (pre-trans Gerrit script needs to have access to the Java command)
-RUN apt-get -y install openjdk-8-jdk
-RUN apt-get -y install gerrit=2.14.3-1 && rm -f /var/gerrit/logs/*
+COPY GerritForge.list  /etc/apt/sources.list.d/GerritForge.list
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1871F775 && \
+    apt-get update                  &&\
+    apt-key update                  &&\
+    apt-get install -y              \
+            openssh-client          \
+            sudo                    \
+            openjdk-8-jdk-headless  &&\
+    apt-get install -y              \
+            gerrit=2.14.3-1         &&\
+    apt-get clean -y                &&\
+    rm -f /var/gerrit/logs/*        &&\
+    rm -rf /var/gerrit/tmp/*        &&\
+    rm -rf /tmp/* 
 
 USER gerrit
-RUN java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit
+RUN java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit && \
+    rm -f /var/gerrit/logs/* &&\
+    rm -rf /var/gerrit/tmp/* &&\
+    rm -rf /tmp/* 
 
 # Allow incoming traffic
 EXPOSE 29418 8080
