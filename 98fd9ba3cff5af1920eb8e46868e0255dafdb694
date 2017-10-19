@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "610a668a_c096b4af",
+        "filename": "ubuntu/16/Dockerfile",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2017-10-19T06:15:42Z",
+      "side": 1,
+      "message": "Here\u0027s a long shot.\nCould it be that the .war is unpacked before this command so that the 86 MB is actually from deleting files from a previous command?",
+      "range": {
+        "startLine": 24,
+        "startChar": 4,
+        "endLine": 24,
+        "endChar": 17
+      },
+      "revId": "98fd9ba3cff5af1920eb8e46868e0255dafdb694",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
