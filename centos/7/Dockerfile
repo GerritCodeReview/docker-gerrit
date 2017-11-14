@@ -22,4 +22,6 @@ EXPOSE 29418 8080
 VOLUME ["/var/gerrit/git", "/var/gerrit/index", "/var/gerrit/cache", "/var/gerrit/db", "/var/gerrit/etc"]
 
 # Start Gerrit
-CMD /var/gerrit/bin/gerrit.sh start && tail -f /var/gerrit/logs/error_log
+CMD git config -f /var/gerrit/etc/gerrit.config gerrit.canonicalWebUrl http://$HOSTNAME:8080/ && \
+    git config -f /var/gerrit/etc/gerrit.config noteDb.changes.autoMigrate true && \
+    /var/gerrit/bin/gerrit.sh run
