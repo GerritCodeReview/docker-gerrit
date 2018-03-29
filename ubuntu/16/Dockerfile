@@ -13,7 +13,7 @@ RUN apt-get -y install openssh-client sudo
 # Install OpenJDK and Gerrit in two subsequent transactions
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN apt-get -y install openjdk-8-jdk
-RUN apt-get -y install gerrit=2.14.3-1 && rm -f /var/gerrit/logs/*
+RUN apt-get -y install gerrit=2.15-1 && rm -f /var/gerrit/logs/*
 
 USER gerrit
 RUN java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit
