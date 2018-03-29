@@ -1,4 +1,4 @@
-FROM centos:7.3.1611
+FROM centos:7.4.1708
 MAINTAINER Gerrit Code Review Community
 
 # Allow remote connectivity and sudo
