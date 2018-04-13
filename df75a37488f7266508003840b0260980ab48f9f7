@@ -70,6 +70,30 @@
       "revId": "df75a37488f7266508003840b0260980ab48f9f7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc6d419c_2cb38c77",
+        "filename": "PULL_REQUEST_TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-04-13T07:19:16Z",
+      "side": 1,
+      "message": "Makes sense. Could you upload a new PS? I’m on the road :-(",
+      "parentUuid": "a96d36ec_8d5e9cac",
+      "range": {
+        "startLine": 5,
+        "startChar": 83,
+        "endLine": 6,
+        "endChar": 66
+      },
+      "revId": "df75a37488f7266508003840b0260980ab48f9f7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
