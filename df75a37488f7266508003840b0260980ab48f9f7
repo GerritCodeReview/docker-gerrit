@@ -46,6 +46,30 @@
       "revId": "df75a37488f7266508003840b0260980ab48f9f7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a96d36ec_8d5e9cac",
+        "filename": "PULL_REQUEST_TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2018-04-13T07:00:23Z",
+      "side": 1,
+      "message": "That\u0027s a good point.  As far as I know, Gerrit will not reject the commit if the committer has a CLA.  But we can\u0027t arbitrarily upload other people\u0027s commits without them having a CLA.\n\nI think the better approach is to simply say that pull requests are not accepted, and changes should instead be uploaded to gerrit-review.  Then it puts the responsibility on the author to make sure the CLA is in place.",
+      "parentUuid": "a32d048e_b55ba8be",
+      "range": {
+        "startLine": 5,
+        "startChar": 83,
+        "endLine": 6,
+        "endChar": 66
+      },
+      "revId": "df75a37488f7266508003840b0260980ab48f9f7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
