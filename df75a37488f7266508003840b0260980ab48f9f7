@@ -22,6 +22,30 @@
       "revId": "df75a37488f7266508003840b0260980ab48f9f7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a32d048e_b55ba8be",
+        "filename": "PULL_REQUEST_TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-04-13T06:32:50Z",
+      "side": 1,
+      "message": "What I do in the GitHub plugin is to fetch the refs/pull/N/head and push the SHA1 to Gerrit as a new change.\n\nFor Gerrit-review we would need to amend the commit to add Change-Id and Committer.\n\nHowever I’m unsure about the CLA if is needed or not :-(",
+      "parentUuid": "5a9679f6_8c0e8385",
+      "range": {
+        "startLine": 5,
+        "startChar": 83,
+        "endLine": 6,
+        "endChar": 66
+      },
+      "revId": "df75a37488f7266508003840b0260980ab48f9f7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
