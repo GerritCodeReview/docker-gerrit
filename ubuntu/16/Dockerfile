@@ -17,6 +17,7 @@ RUN apt-get -y install gerrit=2.14.8-1 && rm -f /var/gerrit/logs/*
 
 USER gerrit
 RUN java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit
+RUN java -jar /var/gerrit/bin/gerrit.war reindex -d /var/gerrit
 
 # Allow incoming traffic
 EXPOSE 29418 8080
