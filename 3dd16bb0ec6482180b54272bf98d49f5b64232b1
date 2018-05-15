@@ -22,6 +22,30 @@
       "revId": "3dd16bb0ec6482180b54272bf98d49f5b64232b1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a2a5f78f_91371a5d",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-15T13:18:31Z",
+      "side": 0,
+      "message": "Because it was never ported I believe",
+      "parentUuid": "f16f2c0c_48559a5c",
+      "range": {
+        "startLine": 14,
+        "startChar": 34,
+        "endLine": 14,
+        "endChar": 63
+      },
+      "revId": "3dd16bb0ec6482180b54272bf98d49f5b64232b1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
