@@ -1,16 +1,19 @@
-FROM centos:7.3.1611
+FROM ubuntu:16.04
 MAINTAINER Gerrit Code Review Community
 
-# Allow remote connectivity and sudo
-RUN yum -y install openssh-client initscripts sudo
-
 # Add Gerrit packages repository
-RUN rpm -i https://gerritforge.com/gerritforge-repo-1-2.noarch.rpm
+RUN echo "deb mirror://mirrorlist.gerritforge.com/deb gerrit contrib" > /etc/apt/sources.list.d/GerritForge.list
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1871F775
+
+# Allow remote connectivity and sudo
+RUN apt-get update
+RUN apt-key update
+RUN apt-get -y install openssh-client sudo
 
 # Install OpenJDK and Gerrit in two subsequent transactions
 # (pre-trans Gerrit script needs to have access to the Java command)
-RUN yum -y install java-1.7.0-openjdk
-RUN yum -y install gerrit-2.13.11
+RUN apt-get -y install openjdk-7-jdk
+RUN apt-get -y install gerrit=2.13.11-1 && rm -f /var/gerrit/logs/*
 
 USER gerrit
 RUN java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit
