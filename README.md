@@ -15,7 +15,7 @@ Start Gerrit Code Review in its demo/staging out-of-the-box setup:
 docker run -ti -p 8080:8080 -p 29418:29418 gerritcodereview/gerrit
 ```
 
-Wait a few minutes until the ```Gerrit Code Review NNN ready``` message appears,
+Wait for a few minutes until the ```Gerrit Code Review NNN ready``` message appears,
 where NNN is your current Gerrit version, then open your browser to http://localhost:8080
 and you will be in Gerrit Code Review.
 
