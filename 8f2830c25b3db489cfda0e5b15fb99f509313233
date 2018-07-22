@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "af3deb4a_291da866",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2018-07-22T08:42:31Z",
+      "side": 1,
+      "message": "This is not really a typo; the sentence is correct with or without \"for\".",
+      "revId": "8f2830c25b3db489cfda0e5b15fb99f509313233",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
