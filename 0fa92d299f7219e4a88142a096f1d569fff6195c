@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2ec707d5_da945aca",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-08-13T16:07:54Z",
+      "side": 1,
+      "message": "We don\u0027t need to specify :80 because it is the default port for http",
+      "range": {
+        "startLine": 27,
+        "startChar": 109,
+        "endLine": 27,
+        "endChar": 112
+      },
+      "revId": "0fa92d299f7219e4a88142a096f1d569fff6195c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c61ff8b4_03651f32",
+        "filename": "ubuntu/16/Dockerfile",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-08-13T16:07:54Z",
+      "side": 1,
+      "message": "Not needed",
+      "range": {
+        "startLine": 30,
+        "startChar": 109,
+        "endLine": 30,
+        "endChar": 112
+      },
+      "revId": "0fa92d299f7219e4a88142a096f1d569fff6195c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
