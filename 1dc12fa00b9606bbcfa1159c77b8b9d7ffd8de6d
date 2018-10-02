@@ -88,6 +88,24 @@
       "revId": "1dc12fa00b9606bbcfa1159c77b8b9d7ffd8de6d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae07ae8_0bde934a",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1072126
+      },
+      "writtenOn": "2018-10-02T12:00:31Z",
+      "side": 1,
+      "message": "Yeah. That said, I wonder why this was added? Maybe the setup used to need openssh-client(s) installed before it was pulled in as an indirect dependency of gerrit.",
+      "parentUuid": "358ea736_9ea449f0",
+      "revId": "1dc12fa00b9606bbcfa1159c77b8b9d7ffd8de6d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
