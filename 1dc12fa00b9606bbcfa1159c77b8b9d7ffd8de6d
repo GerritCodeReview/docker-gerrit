@@ -52,6 +52,24 @@
       "revId": "1dc12fa00b9606bbcfa1159c77b8b9d7ffd8de6d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8ab31bf9_8f996cf7",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1072126
+      },
+      "writtenOn": "2018-10-02T09:53:49Z",
+      "side": 1,
+      "message": "I just checked on pkgs.org and it looks like it is.\n\nhttps://centos.pkgs.org/7/centos-updates-x86_64/git-1.8.3.1-14.el7_5.x86_64.rpm.html\n\nI also checked with `apt-cache depends` and it has `openssh-client` listed as both a \"Breaks\" and \"Recommend\" dependency.",
+      "parentUuid": "046cac9d_2562a1a0",
+      "revId": "1dc12fa00b9606bbcfa1159c77b8b9d7ffd8de6d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
