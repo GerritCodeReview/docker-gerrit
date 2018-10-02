@@ -16,6 +16,24 @@
       "revId": "1dc12fa00b9606bbcfa1159c77b8b9d7ffd8de6d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bdc4104c_c6d22225",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1072126
+      },
+      "writtenOn": "2018-10-02T09:22:28Z",
+      "side": 1,
+      "message": "Is openssh-clients a dependency of git?",
+      "parentUuid": "2ae438a5_c5897205",
+      "revId": "1dc12fa00b9606bbcfa1159c77b8b9d7ffd8de6d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
