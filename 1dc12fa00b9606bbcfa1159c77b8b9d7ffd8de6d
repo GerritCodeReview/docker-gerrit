@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2ae438a5_c5897205",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-10-02T06:56:20Z",
+      "side": 1,
+      "message": "Good catch, I can see that from the output now:\nNo package openssh-client available\n\nP.S. If openssh-clients was never installed and the image was working absolutely fine, do we really need it after all? Possibly not :-)",
+      "revId": "1dc12fa00b9606bbcfa1159c77b8b9d7ffd8de6d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
