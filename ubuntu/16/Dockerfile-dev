@@ -1,0 +1,38 @@
+FROM ubuntu:16.04
+MAINTAINER Gerrit Code Review Community
+
+ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
+
+# Allow remote connectivity and sudo
+RUN apt-get update
+RUN apt-get -y install openssh-client sudo
+
+# Install OpenJDK
+RUN apt-get -y install openjdk-8-jdk
+
+# Install Git and Curl
+RUN apt-get -y install git curl
+
+RUN adduser --disabled-password --gecos "" gerrit --home /home/gerrit
+RUN mkdir -p /var/gerrit/bin
+RUN chown -R gerrit /var/gerrit
+USER gerrit
+RUN curl -L $GERRIT_WAR_URL -o /var/gerrit/bin/gerrit.war
+RUN mkdir -p /var/gerrit/etc && \
+  touch /var/gerrit/etc/gerrit.config && \
+  git config -f /var/gerrit/etc/gerrit.config auth.type DEVELOPMENT_BECOME_ANY_ACCOUNT
+RUN java -jar /var/gerrit/bin/gerrit.war init --dev --batch --install-all-plugins -d /var/gerrit
+RUN java -jar /var/gerrit/bin/gerrit.war reindex -d /var/gerrit
+RUN git config --add -f /var/gerrit/etc/gerrit.config container.javaOptions "-Djava.security.egd=file:/dev/./urandom"
+
+ENV CANONICAL_WEB_URL=
+
+# Allow incoming traffic
+EXPOSE 29418 8080
+
+VOLUME ["/var/gerrit/git", "/var/gerrit/index", "/var/gerrit/cache", "/var/gerrit/db", "/var/gerrit/etc"]
+
+# Start Gerrit
+CMD git config -f /var/gerrit/etc/gerrit.config gerrit.canonicalWebUrl "${CANONICAL_WEB_URL:-http://$HOSTNAME:8080/}" && \
+    git config -f /var/gerrit/etc/gerrit.config noteDb.changes.autoMigrate true && \
+        /var/gerrit/bin/gerrit.sh run
