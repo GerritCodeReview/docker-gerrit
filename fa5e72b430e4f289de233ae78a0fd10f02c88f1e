@@ -1,0 +1,118 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e101f0dc_1298bc05",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-08T22:23:53Z",
+      "side": 1,
+      "message": "docker build -t gerritcodereview/gerrit:$(git describe) .\n\nwould tag the image using the respective checked out release tag",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f4910a1_bc7c33f4",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-08T22:23:53Z",
+      "side": 1,
+      "message": "I noticed that this installs Gerrit with OpenID authentication, I think for development development_become_any_account would be more useful",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c6836d7a_2a6ece1e",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-08T22:23:53Z",
+      "side": 1,
+      "message": "why is this done for the developer image but not for the release image ?",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 31
+      },
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d77315f6_bece85c8",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-08T22:23:53Z",
+      "side": 1,
+      "message": "why is this done for the developer image but not for the release image ?",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59d482d7_159f0de3",
+        "filename": "ubuntu/16/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-08T22:23:53Z",
+      "side": 1,
+      "message": "why is this done for the developer image but not for the release image ?",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 31
+      },
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "15d7c305_d0e6b40b",
+        "filename": "ubuntu/16/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-08T22:23:53Z",
+      "side": 1,
+      "message": "why is this done for the developer image but not for the release image ?",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
