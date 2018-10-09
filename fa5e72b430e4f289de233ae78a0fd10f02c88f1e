@@ -119,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "5a0e2f5c_d7d092a0",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-09T09:38:48Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "f7d8c68d_6463a992",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 31
+      },
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d77315f6_bece85c8",
         "filename": "centos/7/Dockerfile-dev",
         "patchSetId": 2
@@ -148,6 +172,24 @@
       "side": 1,
       "message": "That was done for the stable-2.xx branches. It was added by Luca in commit 2b480857 to speed up server startup. I don\u0027t know, why it is missing on the master-branch. It is not vital to build the image, so I could remove it, if you would prefer it.",
       "parentUuid": "d77315f6_bece85c8",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20628907_0531c4b2",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-09T09:38:48Z",
+      "side": 1,
+      "message": "I added a comment on 2b480857 to follow-up",
+      "parentUuid": "8bfbd8d2_6a1aa578",
       "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
@@ -201,6 +243,30 @@
     },
     {
       "key": {
+        "uuid": "2c5a235b_efa5d958",
+        "filename": "ubuntu/16/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-09T09:38:48Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "66a40edf_782093a0",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 31
+      },
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "15d7c305_d0e6b40b",
         "filename": "ubuntu/16/Dockerfile-dev",
         "patchSetId": 2
@@ -233,6 +299,24 @@
       "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf58f09d_fb94e9f8",
+        "filename": "ubuntu/16/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-09T09:38:48Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "28aea0da_86e82438",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
