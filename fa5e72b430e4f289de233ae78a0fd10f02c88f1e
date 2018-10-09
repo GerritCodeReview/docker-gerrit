@@ -143,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "2cd7c2ea_8764df66",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-10-09T09:46:42Z",
+      "side": 1,
+      "message": "installing the rpm creates user and group, see\nhttps://gerrit.googlesource.com/gerrit-installer/+/master/fpm/Makefile",
+      "parentUuid": "5a0e2f5c_d7d092a0",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 31
+      },
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d77315f6_bece85c8",
         "filename": "centos/7/Dockerfile-dev",
         "patchSetId": 2
