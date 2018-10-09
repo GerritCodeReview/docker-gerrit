@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "36c8fd1d_83fd30a8",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-10-09T09:26:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e101f0dc_1298bc05",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4f4910a1_bc7c33f4",
         "filename": "README.md",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "8e4ee159_0147df7f",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-10-09T09:26:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4f4910a1_bc7c33f4",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c6836d7a_2a6ece1e",
         "filename": "centos/7/Dockerfile-dev",
         "patchSetId": 2
@@ -47,6 +83,30 @@
       "writtenOn": "2018-10-08T22:23:53Z",
       "side": 1,
       "message": "why is this done for the developer image but not for the release image ?",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 31
+      },
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f7d8c68d_6463a992",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-10-09T09:26:47Z",
+      "side": 1,
+      "message": "I am actually not sure. When I tried it without this commands, building the image failed, because the user \u0027gerrit\u0027 did not exist. Maybe it is installed while installing the rpm? At least that was my guess.\nThe directory itself is probably created by the rpm used to install the release. Since this image uses the war-file, it has to be created beforehand.",
+      "parentUuid": "c6836d7a_2a6ece1e",
       "range": {
         "startLine": 13,
         "startChar": 0,
@@ -76,6 +136,24 @@
     },
     {
       "key": {
+        "uuid": "8bfbd8d2_6a1aa578",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-10-09T09:26:47Z",
+      "side": 1,
+      "message": "That was done for the stable-2.xx branches. It was added by Luca in commit 2b480857 to speed up server startup. I don\u0027t know, why it is missing on the master-branch. It is not vital to build the image, so I could remove it, if you would prefer it.",
+      "parentUuid": "d77315f6_bece85c8",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "59d482d7_159f0de3",
         "filename": "ubuntu/16/Dockerfile-dev",
         "patchSetId": 2
@@ -99,6 +177,30 @@
     },
     {
       "key": {
+        "uuid": "66a40edf_782093a0",
+        "filename": "ubuntu/16/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-10-09T09:26:47Z",
+      "side": 1,
+      "message": "As discussed for the centos-image, this was needed to build the image. Before this was probably part of the gerrit-installation package.",
+      "parentUuid": "59d482d7_159f0de3",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 31
+      },
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "15d7c305_d0e6b40b",
         "filename": "ubuntu/16/Dockerfile-dev",
         "patchSetId": 2
@@ -110,6 +212,24 @@
       "writtenOn": "2018-10-08T22:23:53Z",
       "side": 1,
       "message": "why is this done for the developer image but not for the release image ?",
+      "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28aea0da_86e82438",
+        "filename": "ubuntu/16/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-10-09T09:26:47Z",
+      "side": 1,
+      "message": "As discussed, for the centos-image, this is present on alle release branches and only missing on master.",
+      "parentUuid": "15d7c305_d0e6b40b",
       "revId": "fa5e72b430e4f289de233ae78a0fd10f02c88f1e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
