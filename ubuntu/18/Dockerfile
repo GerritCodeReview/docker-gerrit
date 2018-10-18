@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
