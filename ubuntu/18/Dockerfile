@@ -1,7 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
+RUN apt-get update && \
+    apt-get -y install gnupg2
 RUN echo "deb mirror://mirrorlist.gerritforge.com/deb gerrit contrib" > /etc/apt/sources.list.d/GerritForge.list
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1871F775
 
