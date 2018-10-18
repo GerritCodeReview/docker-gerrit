@@ -14,7 +14,7 @@ RUN yum -y install gerrit-2.16.rc0-1  && rm -f /var/gerrit/logs/*
 USER gerrit
 RUN java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit
 RUN java -jar /var/gerrit/bin/gerrit.war reindex -d /var/gerrit
-RUN git config -f /var/gerrit/etc/gerrit.config container.javaOptions "-Djava.security.egd=file:/dev/./urandom"
+RUN git config -f /var/gerrit/etc/gerrit.config --add container.javaOptions "-Djava.security.egd=file:/dev/./urandom"
 
 ENV CANONICAL_WEB_URL=
 
