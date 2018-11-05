@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f3c9b52_a487abac",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 4
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1004034
+      },
+      "writtenOn": "2018-11-05T21:54:44Z",
+      "side": 1,
+      "message": "I didn\u0027t yet find a way to properly configure a user using DEVELOPMENT_BECOME_ANY_ACCOUNT after building and\nstarting this image using the latest build of current master branch of Gerrit:\n- build and start this docker image as described in the README\n- open http://localhost:8080 in browser\n- click \"Sign In\", then click \"New Account\" under \"Register\"\n- Then I get the following confirmation dialog:\n\nPlease confirm your contact information\nThe following contact information was automatically obtained when you signed in to the site.\nThis information is used to display who you are to others, and to send updates to code reviews\nyou have either started or subscribed to.\n\nFull Name:\nUsername:\nPreferred Email:\n\nbut all these fields are empty, changing them doesn\u0027t really work.",
+      "revId": "f2c515120c09bfd4cfbd97bd58f0590c5a1c4c5f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
