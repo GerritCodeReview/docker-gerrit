@@ -41,7 +41,6 @@ services:
     image: gerritcodereview/gerrit
     volumes:
        - git-volume:/var/gerrit/git
-       - db-volume:/var/gerrit/db
        - index-volume:/var/gerrit/index
        - cache-volume:/var/gerrit/cache
     ports:
@@ -50,7 +49,6 @@ services:
 
 volumes:
   git-volume:
-  db-volume:
   index-volume:
   cache-volume:
 ```
@@ -80,10 +78,7 @@ services:
     ports:
       - "29418:29418"
       - "80:8080"
-    links:
-      - postgres
     depends_on:
-      - postgres
       - ldap
     volumes:
      - /external/gerrit/etc:/var/gerrit/etc
@@ -91,15 +86,6 @@ services:
      - /external/gerrit/index:/var/gerrit/index
      - /external/gerrit/cache:/var/gerrit/cache
 #    entrypoint: java -jar /var/gerrit/bin/gerrit.war init -d /var/gerrit
-
-  postgres:
-    image: postgres:9.6
-    environment:
-      - POSTGRES_USER=gerrit
-      - POSTGRES_PASSWORD=secret
-      - POSTGRES_DB=reviewdb
-    volumes:
-      - /external/gerrit/postgres:/var/lib/postgresql/data
 
   ldap:
     image: osixia/openldap
@@ -128,10 +114,8 @@ Example of /external/gerrit/etc/gerrit.config
   canonicalWebUrl = http://localhost
 
 [database]
-  type = postgresql
-  hostname = postgres
-  database = reviewdb
-  username = gerrit
+  type = h2
+  database = db/ReviewDB
 
 [index]
   type = LUCENE
@@ -182,18 +166,7 @@ The external filesystem needs to be initialized with gerrit.war beforehand:
 
 The initialization can be done as a one-off operation before starting all containers.
 
-#### Step-1: Create the PostgreSQL ReviewDB
-
-Start the postgres image standalone using docker compose:
-
-```
-docker-compose up -d postgres
-docker-compose logs -f postgres
-```
-
-Wait until you see in the output a message like: "database system is ready to accept connections"
-
-#### Step-2: Run Gerrit docker init setup from docker
+#### Step-1: Run Gerrit docker init setup from docker
 
 Uncomment in docker-compose.yaml the Gerrit init step entrypoint and run Gerrit with docker-compose
 in foreground.
@@ -205,7 +178,7 @@ docker-compose up gerrit
 Wait until you see in the output the message ```Initialized /var/gerrit``` and then the container
 will exit.
 
-#### Step-3: Start Gerrit in daemon mode
+#### Step-2: Start Gerrit in daemon mode
 
 Comment out the gerrit init entrypoint in docker-compose.yaml and start all the docker-compose nodes:
 
