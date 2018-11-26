@@ -98,6 +98,24 @@
       "revId": "d28560d0dac3d36787c6ee0f3caefaaf4d7df577",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6bb400d0_5b9680cd",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-11-26T09:33:50Z",
+      "side": 1,
+      "message": "Nope, removed.",
+      "parentUuid": "947999d6_3a3719ab",
+      "revId": "d28560d0dac3d36787c6ee0f3caefaaf4d7df577",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
