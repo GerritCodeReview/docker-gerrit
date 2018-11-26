@@ -1,20 +1,21 @@
 FROM centos:7.5.1804
 MAINTAINER Gerrit Code Review Community
 
-RUN yum -y install initscripts sudo
-
 # Add Gerrit packages repository
 RUN rpm -i https://gerritforge.com/gerritforge-repo-1-2.noarch.rpm
 
-# Install OpenJDK and Gerrit in two subsequent transactions
+# Install OS pre-prequisites, OpenJDK and Gerrit in two subsequent transactions
 # (pre-trans Gerrit script needs to have access to the Java command)
-RUN yum -y install java-1.8.0-openjdk
-RUN yum -y install gerrit-2.16-1  && rm -f /var/gerrit/logs/*
+RUN yum -y install initscripts && \
+    yum -y install java-1.8.0-openjdk && \
+    yum -y install gerrit-2.16-1  && rm -Rf /var/gerrit/{logs,tmp}/* && rm -Rf /var/gerrit/.gerritcodereview && \
+    yum -y clean all
 
 USER gerrit
-RUN java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit
-RUN java -jar /var/gerrit/bin/gerrit.war reindex -d /var/gerrit
-RUN git config -f /var/gerrit/etc/gerrit.config --add container.javaOptions "-Djava.security.egd=file:/dev/./urandom"
+
+RUN java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit && \
+    java -jar /var/gerrit/bin/gerrit.war reindex -d /var/gerrit && \
+    git config -f /var/gerrit/etc/gerrit.config --add container.javaOptions "-Djava.security.egd=file:/dev/./urandom"
 
 ENV CANONICAL_WEB_URL=
 
