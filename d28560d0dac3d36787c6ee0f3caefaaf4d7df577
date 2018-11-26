@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dc11ca47_1cb4c2d4",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-11-26T07:41:40Z",
+      "side": 1,
+      "message": "This line should be updated as well.",
+      "revId": "d28560d0dac3d36787c6ee0f3caefaaf4d7df577",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "63caea43_b1ca6f4f",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-11-26T07:41:40Z",
+      "side": 1,
+      "message": "Not used anymore.",
+      "range": {
+        "startLine": 68,
+        "startChar": 57,
+        "endLine": 68,
+        "endChar": 72
+      },
+      "revId": "d28560d0dac3d36787c6ee0f3caefaaf4d7df577",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "947999d6_3a3719ab",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-11-26T07:41:40Z",
+      "side": 1,
+      "message": "Is the H2-database password protected?",
+      "revId": "d28560d0dac3d36787c6ee0f3caefaaf4d7df577",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
