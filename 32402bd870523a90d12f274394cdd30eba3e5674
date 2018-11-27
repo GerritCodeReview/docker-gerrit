@@ -22,6 +22,30 @@
       "revId": "32402bd870523a90d12f274394cdd30eba3e5674",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5813d0c4_2ae515f7",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-11-27T10:43:07Z",
+      "side": 1,
+      "message": "Good point, the service starts as \u0027gerrit\u0027 and thus does not need to change user anyway. Let me try to remove it.",
+      "parentUuid": "c4ce9e27_b60b9680",
+      "range": {
+        "startLine": 9,
+        "startChar": 31,
+        "endLine": 9,
+        "endChar": 35
+      },
+      "revId": "32402bd870523a90d12f274394cdd30eba3e5674",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
