@@ -46,6 +46,30 @@
       "revId": "32402bd870523a90d12f274394cdd30eba3e5674",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "89eb3274_570c42e2",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-11-28T21:37:08Z",
+      "side": 1,
+      "message": "Done, works without it :-)",
+      "parentUuid": "5813d0c4_2ae515f7",
+      "range": {
+        "startLine": 9,
+        "startChar": 31,
+        "endLine": 9,
+        "endChar": 35
+      },
+      "revId": "32402bd870523a90d12f274394cdd30eba3e5674",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
