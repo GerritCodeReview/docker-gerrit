@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8f2067fe_dbbfedab",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-12-10T10:29:46Z",
+      "side": 1,
+      "message": "The \u0027release version\u0027 is referring to Gerrit not the docker image here. I tried to make that more clear now.",
+      "parentUuid": "a857d7ed_8f6aac5a",
+      "range": {
+        "startLine": 30,
+        "startChar": 24,
+        "endLine": 30,
+        "endChar": 44
+      },
+      "revId": "2f20c6b81a3ff93b57075b4e7b0da967136540f1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "dd99fbf5_a43569e9",
         "filename": "centos/7/Dockerfile-dev",
         "patchSetId": 5
@@ -45,6 +69,30 @@
       "revId": "2f20c6b81a3ff93b57075b4e7b0da967136540f1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59c3189e_2b8228f2",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-12-10T10:29:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dd99fbf5_a43569e9",
+      "range": {
+        "startLine": 11,
+        "startChar": 4,
+        "endLine": 11,
+        "endChar": 41
+      },
+      "revId": "2f20c6b81a3ff93b57075b4e7b0da967136540f1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "36f449a5_d1f3806d",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-12-10T10:29:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "49ba1301_d399dcd4",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 31
+      },
+      "revId": "2f20c6b81a3ff93b57075b4e7b0da967136540f1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b8b55089_a7face55",
         "filename": "centos/7/Dockerfile-dev",
         "patchSetId": 5
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "c9708295_f7f7c165",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-12-10T10:29:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b8b55089_a7face55",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 117
+      },
+      "revId": "2f20c6b81a3ff93b57075b4e7b0da967136540f1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9b66f306_c39858b9",
         "filename": "ubuntu/16/Dockerfile-dev",
         "patchSetId": 5
@@ -105,6 +201,24 @@
       "writtenOn": "2018-12-04T22:01:14Z",
       "side": 1,
       "message": "Do we really need the Ubuntu 16.x as well for development versions of Gerrit?",
+      "revId": "2f20c6b81a3ff93b57075b4e7b0da967136540f1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8deb18f3_997e6fd9",
+        "filename": "ubuntu/16/Dockerfile-dev",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-12-10T10:29:46Z",
+      "side": 1,
+      "message": "I agree, that maintaining both CentOS and Ubuntu will be more work than we might need. Looking at DockerHub, the CentOS-version has 100x the pulls compared to Ubuntu-16.04. So from that point of view, we could drop it, I think. Why do you maintain this image in general? Would the users of the Ubuntu-version benefit from having a development version?\n\nIf we drop the Ubuntu version, I would also suggest to move the development-version image into its own directory. That would avoid to use the `-f` option to point to the Dockerfile.",
+      "parentUuid": "9b66f306_c39858b9",
       "revId": "2f20c6b81a3ff93b57075b4e7b0da967136540f1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
