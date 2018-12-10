@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "03c5af87_ba5f1932",
+        "filename": ".github/ISSUE_TEMPLATE/raising-issues.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2018-12-10T11:23:21Z",
+      "side": 1,
+      "message": "Patch submission and review is done through Gerrit.  Only issues should be reported on the issue tracker.",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 127
+      },
+      "revId": "c6cb0c40f9a410359129dc8abad43e760147d4d7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
