@@ -28,8 +28,8 @@ and allows installing additional plugins downloaded from [Gerrit CI](https://ger
 ## Using persistent volumes
 
 Use docker persistent volumes to keep Gerrit data across restarts.
-See below a sample docker-compose.yaml for persisting the H2 Database, Lucene indexes, Caches and
-Git repositories.
+See below a sample docker-compose.yaml per externally-mounted Lucene indexes,
+Caches and Git repositories.
 
 Example of /docker-compose.yaml
 
@@ -41,7 +41,6 @@ services:
     image: gerritcodereview/gerrit
     volumes:
        - git-volume:/var/gerrit/git
-       - db-volume:/var/gerrit/db
        - index-volume:/var/gerrit/index
        - cache-volume:/var/gerrit/cache
     ports:
@@ -50,7 +49,6 @@ services:
 
 volumes:
   git-volume:
-  db-volume:
   index-volume:
   cache-volume:
 ```
@@ -62,12 +60,11 @@ Run ```docker-compose up``` to trigger the build and execution of your custom Ge
 
 When running Gerrit on Docker in production, it is a good idea to rely on a physical external
 storage with much better performance and reliability than the Docker's internal AUFS, and an external
-configuration directory for better change management traceability.
+configuration directory for better change management traceability. Additionally,
+you may want to use a proper external authentication.
 
-Additionally, you may want to replace H2 with a more robust DBMS like PostgreSQL and an external
-authentication system such as LDAP.
-
-See below a more advanced example of docker-compose.yaml with PostgreSQL and OpenLDAP (from Osixia's DockerHub).
+See below a more advanced example of docker-compose.yaml with OpenLDAP
+(from Osixia's DockerHub).
 
 Example of /docker-compose.yaml assuming you have an external directory available as /external/gerrit
 
@@ -80,10 +77,7 @@ services:
     ports:
       - "29418:29418"
       - "80:8080"
-    links:
-      - postgres
     depends_on:
-      - postgres
       - ldap
     volumes:
      - /external/gerrit/etc:/var/gerrit/etc
@@ -91,15 +85,6 @@ services:
      - /external/gerrit/index:/var/gerrit/index
      - /external/gerrit/cache:/var/gerrit/cache
 #    entrypoint: java -jar /var/gerrit/bin/gerrit.war init -d /var/gerrit
-
-  postgres:
-    image: postgres:9.6
-    environment:
-      - POSTGRES_USER=gerrit
-      - POSTGRES_PASSWORD=secret
-      - POSTGRES_DB=reviewdb
-    volumes:
-      - /external/gerrit/postgres:/var/lib/postgresql/data
 
   ldap:
     image: osixia/openldap
@@ -128,10 +113,8 @@ Example of /external/gerrit/etc/gerrit.config
   canonicalWebUrl = http://localhost
 
 [database]
-  type = postgresql
-  hostname = postgres
-  database = reviewdb
-  username = gerrit
+  type = h2
+  database = db/ReviewDB
 
 [index]
   type = LUCENE
@@ -166,9 +149,6 @@ Example of /external/gerrit/etc/gerrit.config
 
 Example of /external/gerrit/etc/secure.config
 ```
-[database]
-  password = secret
-
 [ldap]
   password = secret
 ```
@@ -182,18 +162,7 @@ The external filesystem needs to be initialized with gerrit.war beforehand:
 
 The initialization can be done as a one-off operation before starting all containers.
 
-#### Step-1: Create the PostgreSQL ReviewDB
-
-Start the postgres image standalone using docker compose:
-
-```
-docker-compose up -d postgres
-docker-compose logs -f postgres
-```
-
-Wait until you see in the output a message like: "database system is ready to accept connections"
-
-#### Step-2: Run Gerrit docker init setup from docker
+#### Step-1: Run Gerrit docker init setup from docker
 
 Uncomment in docker-compose.yaml the Gerrit init step entrypoint and run Gerrit with docker-compose
 in foreground.
@@ -205,7 +174,7 @@ docker-compose up gerrit
 Wait until you see in the output the message ```Initialized /var/gerrit``` and then the container
 will exit.
 
-#### Step-3: Start Gerrit in daemon mode
+#### Step-2: Start Gerrit in daemon mode
 
 Comment out the gerrit init entrypoint in docker-compose.yaml and start all the docker-compose nodes:
 
