@@ -80,10 +80,12 @@ services:
     depends_on:
       - ldap
     volumes:
-     - /external/gerrit/etc:/var/gerrit/etc
-     - /external/gerrit/git:/var/gerrit/git
-     - /external/gerrit/index:/var/gerrit/index
-     - /external/gerrit/cache:/var/gerrit/cache
+      - /external/gerrit/etc:/var/gerrit/etc
+      - /external/gerrit/git:/var/gerrit/git
+      - /external/gerrit/index:/var/gerrit/index
+      - /external/gerrit/cache:/var/gerrit/cache
+    environment:
+      - CANONICAL_WEB_URL=http://localhost
 #    entrypoint: java -jar /var/gerrit/bin/gerrit.war init -d /var/gerrit
 
   ldap:
