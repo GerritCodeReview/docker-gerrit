@@ -25,6 +25,35 @@ or IP address of your remote docker server.
 Starting from Ver. 2.14, a new introduction screen guides you through the basics of Gerrit
 and allows installing additional plugins downloaded from [Gerrit CI](https://gerrit-ci.gerritforge.com).
 
+## Build docker image
+
+For docker images that contain released Gerrit versions, tags exist in this git repository pointing
+to a state of the repository, where this version of Gerrit (e.g. 2.15.4) is referenced in the
+Dockerfiles. To build such a docker image for development purposes, checkout the respective version
+tag, e.g.:
+
+```
+git checkout v2.15.4
+```
+
+Navigate to either `./centos/7` or `./ubuntu/16` to build the centos- or ubuntu-based docker image,
+respectively. Then run:
+
+```
+docker build -t gerritcodereview/gerrit:$(git describe) .
+```
+
+To build an image containing a development build of Gerrit, e.g. to test a change, run the following
+command instead:
+
+```
+docker build --build-arg GERRIT_WAR_URL="<url>" -t gerritcodereview/gerrit -f Dockerfile-dev .
+```
+
+The `<url>` passed to the `GERRIT_WAR_URL`-build argument has to point to a Gerrit-`.war`-file.
+The build argument defaults to the URL pointing to the last successful build of the Gerrit master
+branch on the [Gerrit CI](https://gerrit-ci.gerritforge.com).
+
 ## Using persistent volumes
 
 Use docker persistent volumes to keep Gerrit data across restarts.
