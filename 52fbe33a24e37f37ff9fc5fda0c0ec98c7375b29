@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "c7bc3d34_f3edc209",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 7
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-12-12T08:45:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1e05a899_d4f412ce",
+      "range": {
+        "startLine": 9,
+        "startChar": 53,
+        "endLine": 9,
+        "endChar": 60
+      },
+      "revId": "52fbe33a24e37f37ff9fc5fda0c0ec98c7375b29",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "483e53cd_d1275ef5",
         "filename": "centos/7/Dockerfile-dev",
         "patchSetId": 7
@@ -36,6 +60,30 @@
       "writtenOn": "2018-12-11T23:58:31Z",
       "side": 1,
       "message": "Why not using the Dockerfile ADD command? It supports adding files from URLs",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 57
+      },
+      "revId": "52fbe33a24e37f37ff9fc5fda0c0ec98c7375b29",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bc49c95a_11e453af",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 7
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-12-12T08:45:14Z",
+      "side": 1,
+      "message": "Nice. I did not know that.\n\nDone.",
+      "parentUuid": "483e53cd_d1275ef5",
       "range": {
         "startLine": 20,
         "startChar": 0,
@@ -68,6 +116,30 @@
       "revId": "52fbe33a24e37f37ff9fc5fda0c0ec98c7375b29",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8192913_8cf19b8b",
+        "filename": "ubuntu/16/Dockerfile-dev",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2018-12-12T08:45:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9c12fcfc_ec764fd7",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 57
+      },
+      "revId": "52fbe33a24e37f37ff9fc5fda0c0ec98c7375b29",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
