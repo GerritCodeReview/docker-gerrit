@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3cefb97b_938db072",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2019-01-09T12:52:10Z",
+      "side": 1,
+      "message": "This is the database name: setting it to the string \u0027noteDb\u0027 won\u0027t use NoteDb for reviews.\n\nSee more details on how to enable NoteDb in Gerrit documentation:\nhttps://gerrit-documentation.storage.googleapis.com/Documentation/2.16.2/note-db.html",
+      "range": {
+        "startLine": 148,
+        "startChar": 16,
+        "endLine": 148,
+        "endChar": 22
+      },
+      "revId": "ef313a88debe6f285b98455d102d3daddc6844ed",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
