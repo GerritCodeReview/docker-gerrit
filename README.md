@@ -145,7 +145,7 @@ Example of /external/gerrit/etc/gerrit.config
 
 [database]
   type = h2
-  database = db/ReviewDB
+  database = db/noteDb
 
 [index]
   type = LUCENE
