@@ -22,6 +22,30 @@
       "revId": "8667a453169155caef12f280d0fd83e682cb406e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cbd6d69c_34fb89c7",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2019-01-11T23:52:59Z",
+      "side": 1,
+      "message": "Good point, it is optional and indicates the release number of the same version.\nImagine that you release twice the 2.14.18 (e.g. because of a packaging issue), you will have 2.14.18-1 and 2.14.18-2.\n\nIt would make sense to harmonize it and have it always indicated.\nFollow-up change?",
+      "parentUuid": "f35020e8_8e9d4ed2",
+      "range": {
+        "startLine": 12,
+        "startChar": 26,
+        "endLine": 12,
+        "endChar": 33
+      },
+      "revId": "8667a453169155caef12f280d0fd83e682cb406e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
