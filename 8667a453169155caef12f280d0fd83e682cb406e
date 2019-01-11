@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f35020e8_8e9d4ed2",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2019-01-11T23:47:30Z",
+      "side": 1,
+      "message": "I noticed with 2.15 this has a -1 but here it dosen\u0027t seem to have it.\n\nIs that expected?",
+      "range": {
+        "startLine": 12,
+        "startChar": 26,
+        "endLine": 12,
+        "endChar": 33
+      },
+      "revId": "8667a453169155caef12f280d0fd83e682cb406e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
