@@ -46,6 +46,30 @@
       "revId": "8667a453169155caef12f280d0fd83e682cb406e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "25627308_a66cce76",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2019-01-12T00:14:21Z",
+      "side": 1,
+      "message": "Yup, sure (just was wondering :))",
+      "parentUuid": "cbd6d69c_34fb89c7",
+      "range": {
+        "startLine": 12,
+        "startChar": 26,
+        "endLine": 12,
+        "endChar": 33
+      },
+      "revId": "8667a453169155caef12f280d0fd83e682cb406e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
