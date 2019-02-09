@@ -22,6 +22,30 @@
       "revId": "86a36f33f961406b1a8e67740758e6909fbbf0c6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f6fd9f64_4943d301",
+        "filename": "ubuntu/18/Dockerfile-dev",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2019-02-09T23:13:57Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2bd2fd62_7055ee6a",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 17
+      },
+      "revId": "86a36f33f961406b1a8e67740758e6909fbbf0c6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
