@@ -28,12 +28,12 @@ and allows installing additional plugins downloaded from [Gerrit CI](https://ger
 ## Build docker image
 
 For docker images that contain released Gerrit versions, tags exist in this git repository pointing
-to a state of the repository, where this version of Gerrit (e.g. 2.15.4) is referenced in the
+to a state of the repository, where this version of Gerrit (e.g. 2.16.5) is referenced in the
 Dockerfiles. To build such a docker image for development purposes, checkout the respective version
 tag, e.g.:
 
 ```
-git checkout v2.15.4
+git checkout v2.16.5
 ```
 
 Navigate to either `./centos/7` or `./ubuntu/16` to build the centos- or ubuntu-based docker image,
@@ -187,9 +187,8 @@ Example of /external/gerrit/etc/secure.config
 ### Initialize Gerrit DB and Git repositories with Docker
 
 The external filesystem needs to be initialized with gerrit.war beforehand:
-- ReviewDB created and populated with the initial DDL
-- All-Projects, All-Groups and All-Users Git repositories created in Gerrit
-- System Group UUIDs created in Git repositories and initialized in ReviewDB
+- All-Projects and All-Users Git repositories created in Gerrit
+- System Group UUIDs created in Git repositories
 
 The initialization can be done as a one-off operation before starting all containers.
 
