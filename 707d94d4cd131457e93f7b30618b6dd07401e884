@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8d980127_085ec953",
+        "filename": "ubuntu/14/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2019-04-22T23:30:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0ad8fbd3_fe0c66d5",
+      "range": {
+        "startLine": 15,
+        "startChar": 23,
+        "endLine": 15,
+        "endChar": 36
+      },
+      "revId": "707d94d4cd131457e93f7b30618b6dd07401e884",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "55648670_66710d2c",
         "filename": "ubuntu/14/Dockerfile",
         "patchSetId": 1
@@ -36,6 +60,24 @@
       "writtenOn": "2019-04-22T23:27:49Z",
       "side": 1,
       "message": "What if we use this opportunity and discontinue Ubuntu 14.04 support as well?",
+      "revId": "707d94d4cd131457e93f7b30618b6dd07401e884",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "01d544a9_acf7d332",
+        "filename": "ubuntu/14/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2019-04-22T23:30:45Z",
+      "side": 1,
+      "message": "It is already discontinued on v2.16.x and master. This is a stable branch and thus needs to have less disruption as possible.",
+      "parentUuid": "55648670_66710d2c",
       "revId": "707d94d4cd131457e93f7b30618b6dd07401e884",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
