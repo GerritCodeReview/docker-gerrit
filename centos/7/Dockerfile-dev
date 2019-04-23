@@ -1,4 +1,4 @@
-FROM centos:7.5.1804
+FROM centos:7.6.1810
 MAINTAINER Gerrit Code Review Community
 
 ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
