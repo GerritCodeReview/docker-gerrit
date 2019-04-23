@@ -28,12 +28,12 @@ and allows installing additional plugins downloaded from [Gerrit CI](https://ger
 ## Build docker image
 
 For docker images that contain released Gerrit versions, tags exist in this git repository pointing
-to a state of the repository, where this version of Gerrit (e.g. 2.16.5) is referenced in the
+to a state of the repository, where this version of Gerrit (e.g. 3.0.0-rc0) is referenced in the
 Dockerfiles. To build such a docker image for development purposes, checkout the respective version
 tag, e.g.:
 
 ```
-git checkout v2.16.5
+git checkout v3.0.0-rc0
 ```
 
 Navigate to either `./centos/7` or `./ubuntu/16` to build the centos- or ubuntu-based docker image,
@@ -142,10 +142,6 @@ Example of /external/gerrit/etc/gerrit.config
 [gerrit]
   basePath = git
   canonicalWebUrl = http://localhost
-
-[database]
-  type = h2
-  database = db/ReviewDB
 
 [index]
   type = LUCENE
