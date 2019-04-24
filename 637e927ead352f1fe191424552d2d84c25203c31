@@ -22,6 +22,30 @@
       "revId": "637e927ead352f1fe191424552d2d84c25203c31",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af99f901_5c8c91fc",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2019-04-24T20:36:12Z",
+      "side": 1,
+      "message": "True, but not related to the change :-)",
+      "parentUuid": "26687cc6_ad2dac3d",
+      "range": {
+        "startLine": 11,
+        "startChar": 38,
+        "endLine": 11,
+        "endChar": 39
+      },
+      "revId": "637e927ead352f1fe191424552d2d84c25203c31",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
