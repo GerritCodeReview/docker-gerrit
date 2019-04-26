@@ -28,15 +28,15 @@ and allows installing additional plugins downloaded from [Gerrit CI](https://ger
 ## Build docker image
 
 For docker images that contain released Gerrit versions, tags exist in this git repository pointing
-to a state of the repository, where this version of Gerrit (e.g. 3.0.0-rc0) is referenced in the
+to a state of the repository, where this version of Gerrit (e.g. 3.0.0-rc1) is referenced in the
 Dockerfiles. To build such a docker image for development purposes, checkout the respective version
 tag, e.g.:
 
 ```
-git checkout v3.0.0-rc0
+git checkout v3.0.0-rc1
 ```
 
-Navigate to either `./centos/7` or `./ubuntu/16` to build the centos- or ubuntu-based docker image,
+Navigate to either `./centos/7` or `./ubuntu/18` to build the centos- or ubuntu-based docker image,
 respectively. Then run:
 
 ```
@@ -111,11 +111,11 @@ services:
     volumes:
       - /external/gerrit/etc:/var/gerrit/etc
       - /external/gerrit/git:/var/gerrit/git
+      - /external/gerrit/db:/var/gerrit/db
       - /external/gerrit/index:/var/gerrit/index
       - /external/gerrit/cache:/var/gerrit/cache
     environment:
       - CANONICAL_WEB_URL=http://localhost
-#    entrypoint: java -jar /var/gerrit/bin/gerrit.war init -d /var/gerrit
 
   ldap:
     image: osixia/openldap
