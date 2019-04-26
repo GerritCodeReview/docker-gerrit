@@ -14,7 +14,7 @@ RUN apt-get -y install sudo
 # Install OpenJDK and Gerrit in two subsequent transactions
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN apt-get -y install openjdk-8-jdk
-RUN apt-get -y install gerrit=3.0.0.rc0-1 && rm -f /var/gerrit/logs/*
+RUN apt-get -y install gerrit=3.0.0.rc1-1 && rm -f /var/gerrit/logs/*
 
 ADD entrypoint.sh /
 
