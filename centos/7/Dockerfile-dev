@@ -13,6 +13,8 @@ RUN yum -y install \
     git && \
     yum -y clean all
 
+ADD entrypoint.sh /
+
 RUN adduser -m gerrit --home-dir /home/gerrit && \
     mkdir -p /var/gerrit/bin && \
     chown -R gerrit /var/gerrit
@@ -21,8 +23,6 @@ ADD --chown=gerrit $GERRIT_WAR_URL  /var/gerrit/bin/gerrit.war
 RUN mkdir -p /var/gerrit/etc && \
     touch /var/gerrit/etc/gerrit.config && \
     git config -f /var/gerrit/etc/gerrit.config auth.type DEVELOPMENT_BECOME_ANY_ACCOUNT && \
-    java -jar /var/gerrit/bin/gerrit.war init --dev --batch --install-all-plugins --no-auto-start -d /var/gerrit && \
-    java -jar /var/gerrit/bin/gerrit.war reindex -d /var/gerrit && \
     git config --add -f /var/gerrit/etc/gerrit.config container.javaOptions "-Djava.security.egd=file:/dev/./urandom"
 
 ENV CANONICAL_WEB_URL=
@@ -32,7 +32,4 @@ EXPOSE 29418 8080
 
 VOLUME ["/var/gerrit/git", "/var/gerrit/index", "/var/gerrit/cache", "/var/gerrit/db", "/var/gerrit/etc"]
 
-# Start Gerrit
-CMD git config -f /var/gerrit/etc/gerrit.config gerrit.canonicalWebUrl "${CANONICAL_WEB_URL:-http://$HOSTNAME:8080/}" && \
-    git config -f /var/gerrit/etc/gerrit.config noteDb.changes.autoMigrate true && \
-        /var/gerrit/bin/gerrit.sh run
+ENTRYPOINT /entrypoint.sh
