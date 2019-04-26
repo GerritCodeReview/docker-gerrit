@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "00a89a3c_a50ed08a",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2019-04-26T23:34:23Z",
+      "side": 1,
+      "message": "I wonder should we generalise this (e.g make this v3.x and list a example version aboce?).",
+      "range": {
+        "startLine": 36,
+        "startChar": 13,
+        "endLine": 36,
+        "endChar": 23
+      },
+      "revId": "81704b456a34e64193e982aeffe50716e306e63e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
