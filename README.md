@@ -116,6 +116,7 @@ services:
       - /external/gerrit/cache:/var/gerrit/cache
     environment:
       - CANONICAL_WEB_URL=http://localhost
+    # entrypoint: /entrypoint.sh init
 
   ldap:
     image: osixia/openldap
