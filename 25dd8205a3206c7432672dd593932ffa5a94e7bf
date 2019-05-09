@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6dbabbb3_6e30ad55",
+        "filename": "centos/7/.dockerignore",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2019-05-09T16:36:52Z",
+      "side": 1,
+      "message": "This needs to be on ubuntu/18/ as well",
+      "revId": "25dd8205a3206c7432672dd593932ffa5a94e7bf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
