@@ -1,4 +1,4 @@
-FROM centos:7.6.1810
+FROM centos:7.7.1908
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
