@@ -10,7 +10,7 @@ ADD entrypoint.sh /
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN yum -y install initscripts && \
     yum -y install java-1.8.0-openjdk && \
-    yum -y install gerrit-3.1.0-1 && \
+    yum -y install gerrit-3.1.1-1 && \
     /entrypoint.sh init && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit && \
     yum -y clean all
