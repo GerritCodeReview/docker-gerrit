@@ -17,6 +17,7 @@ ADD entrypoint.sh /
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN apt-get -y install openjdk-8-jdk
 RUN apt-get -y install gerrit=3.0.7-1 && \
+    apt-mark hold gerrit && \
     /entrypoint.sh init && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit
 
