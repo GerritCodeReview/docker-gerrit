@@ -9,6 +9,7 @@ then
 fi
 
 git config -f /var/gerrit/etc/gerrit.config gerrit.canonicalWebUrl "${CANONICAL_WEB_URL:-http://$HOSTNAME}"
+git config -f /var/gerrit/etc/gerrit.config http.listenUrl "${HTTP_LISTEN_URL:-http://*:8080/}"
 
 if [ "$1" != "init" ]
 then
