@@ -1,0 +1,234 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "44813ae1_c6170e26",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "httpd",
+      "range": {
+        "startLine": 7,
+        "startChar": 7,
+        "endLine": 7,
+        "endChar": 11
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd093e40_d1de19ab",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "httpd",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 4
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80469404_5865a4e4",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "Wrap long line.",
+      "range": {
+        "startLine": 92,
+        "startChar": 79,
+        "endLine": 92,
+        "endChar": 95
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "674ab27d_051823bb",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "HTTPD",
+      "range": {
+        "startLine": 93,
+        "startChar": 3,
+        "endLine": 93,
+        "endChar": 7
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d45db8ea_5be08c05",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "Wrap long line",
+      "range": {
+        "startLine": 93,
+        "startChar": 81,
+        "endLine": 93,
+        "endChar": 97
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "66780110_b835f351",
+        "filename": "centos/7/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "HTTPD",
+      "range": {
+        "startLine": 21,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 8
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c7a220da_92696c35",
+        "filename": "centos/7/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "HTTPD",
+      "range": {
+        "startLine": 29,
+        "startChar": 4,
+        "endLine": 29,
+        "endChar": 8
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83688ab0_eb64a06c",
+        "filename": "ubuntu/18/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "HTTPD",
+      "range": {
+        "startLine": 27,
+        "startChar": 4,
+        "endLine": 27,
+        "endChar": 8
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "19b44489_65ec82a3",
+        "filename": "ubuntu/18/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "HTTPD",
+      "range": {
+        "startLine": 27,
+        "startChar": 4,
+        "endLine": 27,
+        "endChar": 8
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2d1756e5_fb0a79cc",
+        "filename": "ubuntu/18/entrypoint.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-17T20:32:32Z",
+      "side": 1,
+      "message": "httpd",
+      "range": {
+        "startLine": 12,
+        "startChar": 44,
+        "endLine": 12,
+        "endChar": 48
+      },
+      "revId": "685b7fcb46b2245071b592b84f3545c9fbd31c95",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
