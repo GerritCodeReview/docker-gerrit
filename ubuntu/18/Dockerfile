@@ -24,6 +24,7 @@ RUN apt-get -y install gerrit=3.1.3-1 && \
 USER gerrit
 
 ENV CANONICAL_WEB_URL=
+ENV HTTP_LISTEN_URL=
 
 # Allow incoming traffic
 EXPOSE 29418 8080

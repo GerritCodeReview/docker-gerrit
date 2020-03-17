@@ -85,6 +85,13 @@ volumes:
 
 Run ```docker-compose up``` to trigger the build and execution of your custom Gerrit docker setup.
 
+## Environment variables
+
+This is a list of available environment variables to change the Gerrit configuration:
+
+* `CANONICAL_WEB_URL`: Optional. Set the `gerrit.canonicalWebUrl` parameter in `gerrit.config`. Defaults to `http://<image_hostname>`
+* `HTTP_LISTEN_URL`: Optional. Set the `http.listenUrl` parameter in `gerrit.config`. Defaults to `http://*:8080/`
+
 ## Using Gerrit in production
 
 When running Gerrit on Docker in production, it is a good idea to rely on a physical external
