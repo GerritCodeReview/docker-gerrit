@@ -18,6 +18,7 @@ RUN yum -y install initscripts && \
 USER gerrit
 
 ENV CANONICAL_WEB_URL=
+ENV HTTPD_LISTEN_URL=
 
 # Allow incoming traffic
 EXPOSE 29418 8080
