@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6896441a_f6eb8e27",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-19T14:56:52Z",
+      "side": 1,
+      "message": "Default: leave the current listen url in gerrit.config",
+      "range": {
+        "startLine": 95,
+        "startChar": 0,
+        "endLine": 95,
+        "endChar": 28
+      },
+      "revId": "24fe1137f06aa746f51bb01c37aaeffc75ac558e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "17f8a4b0_98d557d1",
+        "filename": "centos/7/entrypoint.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-19T14:56:52Z",
+      "side": 1,
+      "message": "This would be a breaking change, because if I had configured before an external gerrit.config, then this change would overwrite its listen-url settings.\n\nCan we instead act ONLY if the HTTPD_LISTEN_URL is set?",
+      "revId": "24fe1137f06aa746f51bb01c37aaeffc75ac558e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
