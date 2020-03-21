@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "43934869_d40a861e",
+        "filename": "centos/7/entrypoint.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-21T10:09:49Z",
+      "side": 1,
+      "message": "Should go on the next line, consistently as it is done at L3/L4",
+      "range": {
+        "startLine": 12,
+        "startChar": 26,
+        "endLine": 12,
+        "endChar": 32
+      },
+      "revId": "5545502137a4f0d8f5a972ee7c27f1f0b9466406",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ee8d8ad8_650dccc5",
+        "filename": "ubuntu/18/entrypoint.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-03-21T10:09:49Z",
+      "side": 1,
+      "message": "Should go on the next line, consistently as it is done at L3/L4",
+      "range": {
+        "startLine": 12,
+        "startChar": 26,
+        "endLine": 12,
+        "endChar": 32
+      },
+      "revId": "5545502137a4f0d8f5a972ee7c27f1f0b9466406",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
