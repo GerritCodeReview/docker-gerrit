@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5031ef37_92696313",
+        "filename": "centos/7/entrypoint.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2020-03-22T15:49:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "43934869_d40a861e",
+      "range": {
+        "startLine": 12,
+        "startChar": 26,
+        "endLine": 12,
+        "endChar": 32
+      },
+      "revId": "5545502137a4f0d8f5a972ee7c27f1f0b9466406",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ee8d8ad8_650dccc5",
         "filename": "ubuntu/18/entrypoint.sh",
         "patchSetId": 4
@@ -45,6 +69,30 @@
       "revId": "5545502137a4f0d8f5a972ee7c27f1f0b9466406",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7f219a36_28846147",
+        "filename": "ubuntu/18/entrypoint.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2020-03-22T15:49:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee8d8ad8_650dccc5",
+      "range": {
+        "startLine": 12,
+        "startChar": 26,
+        "endLine": 12,
+        "endChar": 32
+      },
+      "revId": "5545502137a4f0d8f5a972ee7c27f1f0b9466406",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
