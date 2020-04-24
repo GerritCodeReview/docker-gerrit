@@ -1,4 +1,4 @@
-FROM centos:7.6.1810
+FROM centos:8.1.1911
 MAINTAINER Gerrit Code Review Community
 
 ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
@@ -9,7 +9,7 @@ RUN yum -y install \
     openssh-client \
     initscripts \
     sudo \
-    java-1.8.0-openjdk \
+    java-11-openjdk && \
     git && \
     yum -y clean all
 
