@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER Gerrit Code Review Community
 
 ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
@@ -7,7 +7,7 @@ ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-baz
 RUN apt-get update && apt-get -y install \
     openssh-client \
     sudo \
-    openjdk-8-jdk \
+    openjdk-11-jdk \
     git && \
     rm -rf /var/lib/apt/lists/*
 
