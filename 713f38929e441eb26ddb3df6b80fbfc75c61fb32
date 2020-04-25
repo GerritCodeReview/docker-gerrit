@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "45c116d5_a7f7acfd",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-04-25T08:32:19Z",
+      "side": 1,
+      "message": "That statement is not accurate:\n\n* 1. All changes required for JDK 11 support were back-ported to stable-2.16. So that all currently supported stable branches can be used with JDK 11.\n* 2. Not only JDK 11 is supported but all released Java versions as \n we switched to no_AOP Guice distribution recently. The latest released Java version is JDK 14. So that you could also switch to using Gerrit with JDK 14 as well.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 53
+      },
+      "revId": "713f38929e441eb26ddb3df6b80fbfc75c61fb32",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f1a29cb6_55151433",
         "filename": "/COMMIT_MSG",
         "patchSetId": 2
