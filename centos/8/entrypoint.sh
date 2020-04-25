@@ -6,6 +6,8 @@ then
   java -jar /var/gerrit/bin/gerrit.war init --batch --install-all-plugins -d /var/gerrit
   java -jar /var/gerrit/bin/gerrit.war reindex -d /var/gerrit
   git config -f /var/gerrit/etc/gerrit.config --add container.javaOptions "-Djava.security.egd=file:/dev/./urandom"
+  git config -f /var/gerrit/etc/gerrit.config --add container.javaOptions "--add-opens java.base/java.net=ALL-UNNAMED"
+  git config -f /var/gerrit/etc/gerrit.config --add container.javaOptions "--add-opens java.base/java.lang.invoke=ALL-UNNAMED"
 fi
 
 git config -f /var/gerrit/etc/gerrit.config gerrit.canonicalWebUrl "${CANONICAL_WEB_URL:-http://$HOSTNAME}"
