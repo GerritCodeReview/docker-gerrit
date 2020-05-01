@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "7f58697a_08d66abe",
+        "filename": "centos/8/entrypoint.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-05-01T16:36:43Z",
+      "side": 1,
+      "message": "I believe here they are required, because we use a default value.",
+      "parentUuid": "4ba79f7a_bd3d675a",
+      "range": {
+        "startLine": 15,
+        "startChar": 68,
+        "endLine": 15,
+        "endChar": 106
+      },
+      "revId": "727e9817cfce887b0d0d4ddce729130611b06218",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3bdc3ae0_5eb08882",
         "filename": "ubuntu/20/entrypoint.sh",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "727e9817cfce887b0d0d4ddce729130611b06218",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dffedde5_f7cf0267",
+        "filename": "ubuntu/20/entrypoint.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-05-01T16:36:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "3bdc3ae0_5eb08882",
+      "range": {
+        "startLine": 15,
+        "startChar": 68,
+        "endLine": 15,
+        "endChar": 106
+      },
+      "revId": "727e9817cfce887b0d0d4ddce729130611b06218",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
