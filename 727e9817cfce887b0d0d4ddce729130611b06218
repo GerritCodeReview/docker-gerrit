@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4ba79f7a_bd3d675a",
+        "filename": "centos/8/entrypoint.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2020-05-01T16:34:36Z",
+      "side": 1,
+      "message": "Unrelated: is this way of handling the curly braces -with these two variables- normal?",
+      "range": {
+        "startLine": 15,
+        "startChar": 68,
+        "endLine": 15,
+        "endChar": 106
+      },
+      "revId": "727e9817cfce887b0d0d4ddce729130611b06218",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3bdc3ae0_5eb08882",
+        "filename": "ubuntu/20/entrypoint.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2020-05-01T16:34:36Z",
+      "side": 1,
+      "message": "(Same unrelated question here.)",
+      "range": {
+        "startLine": 15,
+        "startChar": 68,
+        "endLine": 15,
+        "endChar": 106
+      },
+      "revId": "727e9817cfce887b0d0d4ddce729130611b06218",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
