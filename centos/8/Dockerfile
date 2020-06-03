@@ -15,6 +15,9 @@ RUN yum -y install initscripts && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit && \
     yum -y clean all
 
+# Enable LEGACY security policies by default (for TLS 1.0/1.1 compatibility)
+RUN update-crypto-policies --set LEGACY
+
 USER gerrit
 
 ENV CANONICAL_WEB_URL=
