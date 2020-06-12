@@ -22,6 +22,30 @@
       "revId": "27eb986c36525171d42db0e6f22de3d2c49ec1cb",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "00e4a6ca_744db517",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-06-12T08:21:12Z",
+      "side": 1,
+      "message": "\u003e Should the author be the author of the original PR?\n\nThe issue is: the original author isn\u0027t registered on gerrit-review and has not signed the CLA. I assume this change can\u0027t be merged until that happens, correct?",
+      "parentUuid": "dbeae8ed_d8f3ac12",
+      "range": {
+        "startLine": 2,
+        "startChar": 12,
+        "endLine": 2,
+        "endChar": 53
+      },
+      "revId": "27eb986c36525171d42db0e6f22de3d2c49ec1cb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
