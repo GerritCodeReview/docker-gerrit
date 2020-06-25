@@ -70,6 +70,30 @@
       "revId": "27eb986c36525171d42db0e6f22de3d2c49ec1cb",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "152302d9_17167059",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2020-06-25T06:36:49Z",
+      "side": 1,
+      "message": "That\u0027s not something that we can check.\n\nWhat do you see under the agreements section of your settings page?\n\nhttps://gerrit-review.googlesource.com/settings/#Agreements\n\nIf you see \"Google CLA\" we should be good to go.",
+      "parentUuid": "0b0889a7_346de7ff",
+      "range": {
+        "startLine": 2,
+        "startChar": 12,
+        "endLine": 2,
+        "endChar": 53
+      },
+      "revId": "27eb986c36525171d42db0e6f22de3d2c49ec1cb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
