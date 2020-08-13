@@ -42,7 +42,7 @@ tag, e.g.:
 git checkout v3.0.0
 ```
 
-Navigate to either `./centos/7` or `./ubuntu/18` to build the centos- or ubuntu-based docker image,
+Navigate to either `./centos/8` or `./ubuntu/20` to build the centos- or ubuntu-based docker image,
 respectively. Then run:
 
 ```
