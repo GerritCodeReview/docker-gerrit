@@ -25,24 +25,24 @@ or IP address of your remote docker server.
 Starting from Ver. 2.14, a new introduction screen guides you through the basics of Gerrit
 and allows installing additional plugins downloaded from [Gerrit CI](https://gerrit-ci.gerritforge.com).
 
-Official releases are also available as Docker images, e.g. use the following to run the 3.0.0 version.
+Official releases are also available as Docker images, e.g. use the following to run the 3.2.3 version.
 
 ```
-docker run -ti -p 8080:8080 -p 29418:29418 gerritcodereview/gerrit:3.0.0
+docker run -ti -p 8080:8080 -p 29418:29418 gerritcodereview/gerrit:3.2.3
 ```
 
 ## Build docker image
 
 For docker images that contain released Gerrit versions, tags exist in this git repository pointing
-to a state of the repository, where this version of Gerrit (e.g. 3.0.0) is referenced in the
+to a state of the repository, where this version of Gerrit (e.g. 3.2.3) is referenced in the
 Dockerfiles. To build such a docker image for development purposes, checkout the respective version
 tag, e.g.:
 
 ```
-git checkout v3.0.0
+git checkout v3.2.3
 ```
 
-Navigate to either `./centos/7` or `./ubuntu/18` to build the centos- or ubuntu-based docker image,
+Navigate to either `./centos/8` or `./ubuntu/20` to build the centos- or ubuntu-based docker image,
 respectively. Then run:
 
 ```
