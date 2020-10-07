@@ -1,4 +1,4 @@
-FROM centos:8.1.1911
+FROM centos:8.2.2004
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
