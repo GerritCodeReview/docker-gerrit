@@ -19,7 +19,8 @@ RUN apt-get -y install openjdk-11-jdk
 RUN apt-get -y install gerrit=3.3.0.rc2-1 && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
-    rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit
+    bash -c 'rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/*' && \
+    chown -R gerrit:gerrit /var/gerrit
 
 USER gerrit
 
