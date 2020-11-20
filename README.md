@@ -25,21 +25,21 @@ or IP address of your remote docker server.
 Starting from Ver. 2.14, a new introduction screen guides you through the basics of Gerrit
 and allows installing additional plugins downloaded from [Gerrit CI](https://gerrit-ci.gerritforge.com).
 
-Official releases are also available as Docker images, e.g. use the following to run the 3.2.3 version.
+Official releases are also available as Docker images, e.g. use the following to run the 3.3.0 version.
 
 ```
-docker run -ti -p 8080:8080 -p 29418:29418 gerritcodereview/gerrit:3.2.3
+docker run -ti -p 8080:8080 -p 29418:29418 gerritcodereview/gerrit:3.3.0
 ```
 
 ## Build docker image
 
 For docker images that contain released Gerrit versions, tags exist in this git repository pointing
-to a state of the repository, where this version of Gerrit (e.g. 3.2.3) is referenced in the
+to a state of the repository, where this version of Gerrit (e.g. 3.3.0) is referenced in the
 Dockerfiles. To build such a docker image for development purposes, checkout the respective version
 tag, e.g.:
 
 ```
-git checkout v3.2.3
+git checkout v3.3.0
 ```
 
 Navigate to either `./centos/8` or `./ubuntu/20` to build the centos- or ubuntu-based docker image,
@@ -130,7 +130,7 @@ services:
       - /external/gerrit/cache:/var/gerrit/cache
     environment:
       - CANONICAL_WEB_URL=http://localhost
-    # entrypoint: /entrypoint.sh init
+    # command: init
 
   ldap:
     image: osixia/openldap
@@ -156,7 +156,6 @@ Example of /external/gerrit/etc/gerrit.config
 ```
 [gerrit]
   basePath = git
-  canonicalWebUrl = http://localhost
 
 [index]
   type = LUCENE
@@ -205,7 +204,7 @@ The initialization can be done as a one-off operation before starting all contai
 
 #### Step-1: Run Gerrit docker init setup from docker
 
-Uncomment in docker-compose.yaml the Gerrit init step entrypoint and run Gerrit with docker-compose
+Uncomment the `command: init` option in docker-compose.yaml and run Gerrit with docker-compose
 in foreground.
 
 ```
@@ -217,7 +216,7 @@ will exit.
 
 #### Step-2: Start Gerrit in daemon mode
 
-Comment out the gerrit init entrypoint in docker-compose.yaml and start all the docker-compose nodes:
+Comment out the `command: init` option in docker-compose.yaml and start all the docker-compose nodes:
 
 ```
 docker-compose up -d
