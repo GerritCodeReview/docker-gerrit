@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM openjdk:11
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
@@ -13,9 +13,6 @@ RUN apt-get -y install sudo
 
 ADD entrypoint.sh /
 
-# Install OpenJDK and Gerrit in two subsequent transactions
-# (pre-trans Gerrit script needs to have access to the Java command)
-RUN apt-get -y install openjdk-11-jdk
 RUN apt-get -y install gerrit=3.3.0-1 && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
