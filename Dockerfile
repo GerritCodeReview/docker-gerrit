@@ -1,5 +1,10 @@
-FROM ubuntu:20.04
+FROM openjdk:11
 MAINTAINER Gerrit Code Review Community
+
+# openjdk base image puts java into /usr/local/openjdk-11/bin which
+# is normally in PATH for users in the image - but not when running
+# apt-get install. Go figure.
+RUN ln -s /usr/local/openjdk-11/bin/java /usr/bin/java
 
 # Add Gerrit packages repository
 RUN apt-get update && \
@@ -13,9 +18,6 @@ RUN apt-get -y install sudo
 
 ADD entrypoint.sh /
 
-# Install OpenJDK and Gerrit in two subsequent transactions
-# (pre-trans Gerrit script needs to have access to the Java command)
-RUN apt-get -y install openjdk-11-jdk
 RUN apt-get -y install gerrit=3.5.1-1 && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \

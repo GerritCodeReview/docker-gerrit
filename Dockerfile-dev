@@ -1,21 +1,18 @@
-FROM centos:8.1.1911
+FROM openjdk:11
 MAINTAINER Gerrit Code Review Community
 
 ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
 
-# Allow remote connectivity and sudo and install OpenJDK and Git
-# (pre-trans Gerrit script needs to have access to the Java command)
-RUN yum -y install \
-    openssh-clients \
-    initscripts \
+# Install Git and allow remote connectivity and sudo
+RUN apt-get update && apt-get -y install \
+    openssh-client \
     sudo \
-    java-11-openjdk \
     git && \
-    yum -y clean all
+    rm -rf /var/lib/apt/lists/*
 
 ADD entrypoint.sh /
 
-RUN adduser -m gerrit --home-dir /home/gerrit && \
+RUN adduser --disabled-password --gecos "" gerrit --home /home/gerrit && \
     mkdir -p /var/gerrit/bin && \
     chown -R gerrit /var/gerrit
 USER gerrit
