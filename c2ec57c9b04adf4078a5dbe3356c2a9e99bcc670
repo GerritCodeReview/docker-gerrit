@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3729876_8a48e154",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010246
+      },
+      "writtenOn": "2020-12-11T14:29:29Z",
+      "side": 1,
+      "message": "Hah: \n\nPlease install Java \u003e\u003d 1.8.0 and try again\n\nLooking in to why the check script doesn\u0027t find the java in the openjdk image",
+      "revId": "c2ec57c9b04adf4078a5dbe3356c2a9e99bcc670",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
