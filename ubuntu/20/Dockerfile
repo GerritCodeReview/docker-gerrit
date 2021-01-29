@@ -16,7 +16,7 @@ ADD entrypoint.sh /
 # Install OpenJDK and Gerrit in two subsequent transactions
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN apt-get -y install openjdk-11-jdk
-RUN apt-get -y install gerrit=3.3.1-1 && \
+RUN apt-get -y install gerrit=3.3.2-1 && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
     bash -c 'rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/*' && \
