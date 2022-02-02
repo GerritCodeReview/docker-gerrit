@@ -1,4 +1,4 @@
-FROM centos:8.2.2004
+FROM tgagor/centos:2.0.11-stream8
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
