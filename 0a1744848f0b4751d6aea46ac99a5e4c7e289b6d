@@ -22,6 +22,30 @@
       },
       "revId": "0a1744848f0b4751d6aea46ac99a5e4c7e289b6d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6425788_3f5310cf",
+        "filename": "centos/8/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-03-11T22:30:01Z",
+      "side": 1,
+      "message": "Moved to AlmaLinux",
+      "parentUuid": "1acbe334_35f05e0d",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 20
+      },
+      "revId": "0a1744848f0b4751d6aea46ac99a5e4c7e289b6d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
