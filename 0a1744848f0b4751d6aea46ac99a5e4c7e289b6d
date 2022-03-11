@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1acbe334_35f05e0d",
+        "filename": "centos/8/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-03-11T13:54:05Z",
+      "side": 1,
+      "message": "Not sure this would work: CentOS 8 is EOL and the repositories are offline.",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 20
+      },
+      "revId": "0a1744848f0b4751d6aea46ac99a5e4c7e289b6d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
