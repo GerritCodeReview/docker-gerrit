@@ -1,8 +1,6 @@
 FROM almalinux:8.5
 MAINTAINER Gerrit Code Review Community
 
-ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
-
 # Allow remote connectivity and sudo and install OpenJDK and Git
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN yum -y install \
@@ -19,6 +17,7 @@ RUN adduser -m gerrit --home-dir /home/gerrit && \
     mkdir -p /var/gerrit/bin && \
     chown -R gerrit /var/gerrit
 USER gerrit
+ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
 ADD --chown=gerrit $GERRIT_WAR_URL  /var/gerrit/bin/gerrit.war
 RUN mkdir -p /var/gerrit/etc && \
     touch /var/gerrit/etc/gerrit.config && \
