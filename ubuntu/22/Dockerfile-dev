@@ -1,8 +1,6 @@
 FROM eclipse-temurin:17-jammy
 MAINTAINER Gerrit Code Review Community
 
-ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
-
 # Install OpenJDK and Git and allow remote connectivity and sudo
 RUN apt-get update && apt-get -y install \
     openssh-client \
@@ -16,6 +14,7 @@ RUN adduser --disabled-password --gecos "" gerrit --home /home/gerrit && \
     mkdir -p /var/gerrit/bin && \
     chown -R gerrit /var/gerrit
 USER gerrit
+ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
 ADD --chown=gerrit $GERRIT_WAR_URL  /var/gerrit/bin/gerrit.war
 RUN mkdir -p /var/gerrit/etc && \
     touch /var/gerrit/etc/gerrit.config && \
