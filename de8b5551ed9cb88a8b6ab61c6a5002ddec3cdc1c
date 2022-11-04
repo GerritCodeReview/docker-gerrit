@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80111a46_4e7fb6f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-04T12:14:38Z",
+      "side": 1,
+      "message": "should we merge https://gerrit-review.googlesource.com/c/docker-gerrit/+/350463 before?",
+      "revId": "de8b5551ed9cb88a8b6ab61c6a5002ddec3cdc1c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
