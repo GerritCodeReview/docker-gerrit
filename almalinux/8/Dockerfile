@@ -1,4 +1,4 @@
-FROM almalinux:8.5
+FROM almalinux:8.6
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
