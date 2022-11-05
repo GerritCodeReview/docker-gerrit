@@ -1,4 +1,4 @@
-FROM almalinux:8.5
+FROM almalinux:8.6
 MAINTAINER Gerrit Code Review Community
 
 ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
