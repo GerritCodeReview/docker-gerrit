@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f39ecfd6_3ba65a1a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-07T12:20:39Z",
+      "side": 1,
+      "message": "I have built the image locally and called some very basic sanity checks",
+      "revId": "8d43f079db5249293b02a52d8a7c5cff587c95f6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
