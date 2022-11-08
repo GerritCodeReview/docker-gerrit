@@ -42,8 +42,8 @@ tag, e.g.:
 git checkout v3.3.0
 ```
 
-Navigate to either `./centos/8` or `./ubuntu/20` to build the centos- or ubuntu-based docker image,
-respectively. Then run:
+Navigate to either `./almalinux/8` or `./ubuntu/20` to build the almalinux- or ubuntu-based docker
+image, respectively. Then run:
 
 ```
 docker build -t gerritcodereview/gerrit:$(git describe) .
