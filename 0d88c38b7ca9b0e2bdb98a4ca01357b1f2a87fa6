@@ -22,6 +22,30 @@
       },
       "revId": "0d88c38b7ca9b0e2bdb98a4ca01357b1f2a87fa6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58eac22c_80d57f65",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-11-18T08:52:55Z",
+      "side": 1,
+      "message": "Our packages aren\u0027t that much distribution-sensitive. If this works with `bionic`, we can stick to it.",
+      "parentUuid": "660ca1d8_85ae08b3",
+      "range": {
+        "startLine": 7,
+        "startChar": 50,
+        "endLine": 7,
+        "endChar": 56
+      },
+      "revId": "0d88c38b7ca9b0e2bdb98a4ca01357b1f2a87fa6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
