@@ -16,6 +16,29 @@
       "message": "@luca.milanesio@gmail.com in my M1 it sometimes hangs on `amd64` platform build (during Gerrit init phase, but that happens all the time even if I use existing images) and I wonder if that will be the case for you. Later today I will give it a try on my ubuntu machine and will either fix anything if there is anything to fix or case `V+1` if it works (obviously I will tweak it to use locally built Gerrit packers as we have no multi-platform ready packages published in maven - notes section is mentioning it as a prerequisite).",
       "revId": "043a8a96911f828a3c8b985bd4b08601f9ae5278",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f057560c_a03aa87d",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-19T12:05:57Z",
+      "side": 1,
+      "message": "nit: whitespace",
+      "range": {
+        "startLine": 38,
+        "startChar": 6,
+        "endLine": 38,
+        "endChar": 7
+      },
+      "revId": "043a8a96911f828a3c8b985bd4b08601f9ae5278",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
