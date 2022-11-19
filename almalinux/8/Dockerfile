@@ -2,15 +2,17 @@ FROM almalinux:8.6
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
-RUN rpm -i https://gerritforge.com/gerritforge-repo-1-2.noarch.rpm
+ADD gerritforge-repo-1-3.noarch.rpm /
+RUN rpm -i /gerritforge-repo-1-3.noarch.rpm
 
 ADD entrypoint.sh /
+ADD gerrit-3.7.0-1.noarch.rpm /
 
 # Install OS pre-prequisites, OpenJDK and Gerrit in two subsequent transactions
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN yum -y install initscripts && \
     yum -y install java-11-openjdk && \
-    yum -y install gerrit-3.7.0-1 && \
+    yum -y install /gerrit-3.7.0-1.noarch.rpm && \
     /entrypoint.sh init && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit && \
     yum -y clean all

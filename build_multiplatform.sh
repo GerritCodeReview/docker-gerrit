@@ -24,7 +24,7 @@ fi
 echo "### Building images for $DESTINATION destination and $PLATFORMS"
 
 BUILDER=gerrit-multiplatform-image-builder
-DOCKER_USER=gerritcodereview/gerrit
+DOCKER_USER=geminicaprograms/gerrit
 
 function create_builder() {
   if [[ "$OSTYPE" == "linux"* ]]; then
