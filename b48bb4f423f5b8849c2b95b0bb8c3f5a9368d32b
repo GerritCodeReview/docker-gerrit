@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "120efc50_913cb11f",
+        "filename": "almalinux/8/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-19T17:09:16Z",
+      "side": 1,
+      "message": "available package\n```\nyum --showduplicates list gerrit | grep 3.7.0-2\ngerrit.noarch                      3.7.0-2                           gerritforge\n```",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 33
+      },
+      "revId": "b48bb4f423f5b8849c2b95b0bb8c3f5a9368d32b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea9e12d1_f969b728",
+        "filename": "ubuntu/20/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-19T17:09:16Z",
+      "side": 1,
+      "message": "Missing package\n```\napt-get install gerrit\u003d3.7.0-2\nReading package lists... Done\nBuilding dependency tree       \nReading state information... Done\nE: Version \u00273.7.0-2\u0027 for \u0027gerrit\u0027 was not found\n```",
+      "range": {
+        "startLine": 19,
+        "startChar": 23,
+        "endLine": 19,
+        "endChar": 37
+      },
+      "revId": "b48bb4f423f5b8849c2b95b0bb8c3f5a9368d32b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
