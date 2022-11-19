@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30a01795_2bdb6052",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-11-19T11:40:10Z",
+      "side": 1,
+      "message": "The GerritForge\u0027s RPM repo should be also updated",
+      "revId": "6ffadb42b698479b170ad215bec2d2f325d8a6ba",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
