@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "638aafc3_beffa952",
+        "filename": "almalinux/8/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-19T17:03:18Z",
+      "side": 1,
+      "message": "this package is available for almalinux\n```\n# yum --showduplicates list gerrit | grep 3.5.4\ngerrit.noarch                      3.5.4-1                           gerritforge\ngerrit.noarch                      3.5.4-2                           gerritforge\n```",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 33
+      },
+      "revId": "bef1fa66d317dc49d287806f0c9ec22bf3076ebd",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81fe8736_8e5dd1fd",
+        "filename": "ubuntu/20/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-19T17:03:18Z",
+      "side": 1,
+      "message": "there is no such package\n```\napt-get install gerrit\u003d3.5.4-2\nReading package lists... Done\nBuilding dependency tree       \nReading state information... Done\nE: Version \u00273.5.4-2\u0027 for \u0027gerrit\u0027 was not found\n```\nthere is only `3.5.4-1`",
+      "range": {
+        "startLine": 19,
+        "startChar": 36,
+        "endLine": 19,
+        "endChar": 37
+      },
+      "revId": "bef1fa66d317dc49d287806f0c9ec22bf3076ebd",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
