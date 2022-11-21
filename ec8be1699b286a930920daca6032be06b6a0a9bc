@@ -45,6 +45,30 @@
       },
       "revId": "ec8be1699b286a930920daca6032be06b6a0a9bc",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5059c3ce_2c36daa7",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-11-21T13:42:40Z",
+      "side": 1,
+      "message": "This should now work, the release has been published",
+      "parentUuid": "94db9431_d506406c",
+      "range": {
+        "startLine": 19,
+        "startChar": 23,
+        "endLine": 19,
+        "endChar": 37
+      },
+      "revId": "ec8be1699b286a930920daca6032be06b6a0a9bc",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
