@@ -45,6 +45,30 @@
       },
       "revId": "b48bb4f423f5b8849c2b95b0bb8c3f5a9368d32b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f529d004_4972bc74",
+        "filename": "ubuntu/20/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-11-21T13:24:05Z",
+      "side": 1,
+      "message": "Works now, can you recheck?",
+      "parentUuid": "ea9e12d1_f969b728",
+      "range": {
+        "startLine": 19,
+        "startChar": 23,
+        "endLine": 19,
+        "endChar": 37
+      },
+      "revId": "b48bb4f423f5b8849c2b95b0bb8c3f5a9368d32b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
