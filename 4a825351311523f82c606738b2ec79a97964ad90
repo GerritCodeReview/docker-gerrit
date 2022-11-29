@@ -16,6 +16,23 @@
       "message": "Verified both `--load` and `--push` targets with Ie4b815822 change.",
       "revId": "4a825351311523f82c606738b2ec79a97964ad90",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c3e210e_361f28d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-29T11:08:29Z",
+      "side": 1,
+      "message": "ping @luca, should we merge it?",
+      "revId": "4a825351311523f82c606738b2ec79a97964ad90",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
