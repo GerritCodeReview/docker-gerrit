@@ -33,6 +33,75 @@
       "message": "ping @luca, should we merge it?",
       "revId": "4a825351311523f82c606738b2ec79a97964ad90",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c7a3e8e9_510dc63a",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-11-29T11:24:39Z",
+      "side": 1,
+      "message": "Why don\u0027t you include a help screen when no parameters are specified? That is standard practice with shell scripts.\n\nI believe DESTINATION can only be `--load` or `--push` isn\u0027t it? Can you document this?",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 14
+      },
+      "revId": "4a825351311523f82c606738b2ec79a97964ad90",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d12cb098_45ae71b7",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-11-29T11:24:39Z",
+      "side": 1,
+      "message": "This would be `v3.7.0` but we need `3.7.0`.",
+      "range": {
+        "startLine": 56,
+        "startChar": 91,
+        "endLine": 56,
+        "endChar": 106
+      },
+      "revId": "4a825351311523f82c606738b2ec79a97964ad90",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81e54781_1eb42d40",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-11-29T11:24:39Z",
+      "side": 1,
+      "message": "Same as above",
+      "range": {
+        "startLine": 60,
+        "startChar": 89,
+        "endLine": 60,
+        "endChar": 104
+      },
+      "revId": "4a825351311523f82c606738b2ec79a97964ad90",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
