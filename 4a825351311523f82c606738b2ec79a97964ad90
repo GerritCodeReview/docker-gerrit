@@ -76,6 +76,30 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3bd7662_5f26a504",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-30T07:35:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c7a3e8e9_510dc63a",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 14
+      },
+      "revId": "4a825351311523f82c606738b2ec79a97964ad90",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d12cb098_45ae71b7",
@@ -99,6 +123,30 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c561d435_4e5621f0",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-30T07:35:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d12cb098_45ae71b7",
+      "range": {
+        "startLine": 56,
+        "startChar": 91,
+        "endLine": 56,
+        "endChar": 106
+      },
+      "revId": "4a825351311523f82c606738b2ec79a97964ad90",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "81e54781_1eb42d40",
@@ -112,6 +160,30 @@
       "writtenOn": "2022-11-29T11:24:39Z",
       "side": 1,
       "message": "Same as above",
+      "range": {
+        "startLine": 60,
+        "startChar": 89,
+        "endLine": 60,
+        "endChar": 104
+      },
+      "revId": "4a825351311523f82c606738b2ec79a97964ad90",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b12684c_94d8b4c3",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-30T07:35:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "81e54781_1eb42d40",
       "range": {
         "startLine": 60,
         "startChar": 89,
