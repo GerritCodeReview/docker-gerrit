@@ -16,6 +16,29 @@
       "message": "Verified by calling with `--load` and images were built as expected.\nSyntax was additionally verified with https://www.shellcheck.net/ and relevant issues were fixed.",
       "revId": "bbd628dfb8c5f384db42daab757a67a20930fc75",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "15b8ebfd_5892ce73",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2022-11-30T11:42:41Z",
+      "side": 1,
+      "message": "`[--load|--push]` which means that you can also avoid sending any of the two.\n\nIf you say `--[load|push]` it means that running it with `--` alone would be legitimate, which isn\u0027t true.",
+      "range": {
+        "startLine": 7,
+        "startChar": 19,
+        "endLine": 7,
+        "endChar": 32
+      },
+      "revId": "bbd628dfb8c5f384db42daab757a67a20930fc75",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
