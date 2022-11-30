@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20961190_ccb7554b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-11-30T07:37:47Z",
+      "side": 1,
+      "message": "Verified by calling with `--load` and images were built as expected.\nSyntax was additionally verified with https://www.shellcheck.net/ and relevant issues were fixed.",
+      "revId": "bbd628dfb8c5f384db42daab757a67a20930fc75",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
