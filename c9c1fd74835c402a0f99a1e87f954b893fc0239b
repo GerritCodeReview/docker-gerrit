@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cec4b6e_08e2c700",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-12-01T07:41:46Z",
+      "side": 1,
+      "message": "I have missed the `README.md` while I was applying the changes to the original commit 😞",
+      "revId": "c9c1fd74835c402a0f99a1e87f954b893fc0239b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
