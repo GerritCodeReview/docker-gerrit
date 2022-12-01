@@ -63,11 +63,11 @@ branch on the [Gerrit CI](https://gerrit-ci.gerritforge.com).
 ## Build multi-platform images
 
 For the official releases one can build both `amd64` and `amd64` images at once and either
-load them to the local docker registry (default) or push them to the `gerritcodereview`
-dockerhub account. In order to do that one simply calls:
+load them to the local docker registry or push them to the `gerritcodereview`dockerhub account.
+In order to do that one simply calls:
 
 ```
-./build_multiplatform.sh
+./build_multiplatform.sh --load
 ```
 
 And multiplatform images will be created and loaded locally. Calling:
@@ -79,9 +79,9 @@ And multiplatform images will be created and loaded locally. Calling:
 pushes images to the dockerhub instead.
 
 Notes:
-* in the default (--load) target only the current system architecture image is pushed
-  to the local registry
-* almalinux images is additionally tagged as the default release image.
+* in the `--load` target only the current system architecture image is pushed to the local
+  registry
+* almalinux image is additionally tagged as the default release image.
 
 ## Using persistent volumes
 
