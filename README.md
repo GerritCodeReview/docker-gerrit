@@ -60,6 +60,29 @@ The `<url>` passed to the `GERRIT_WAR_URL`-build argument has to point to a Gerr
 The build argument defaults to the URL pointing to the last successful build of the Gerrit master
 branch on the [Gerrit CI](https://gerrit-ci.gerritforge.com).
 
+## Build multi-platform images
+
+For the official releases one can build both `amd64` and `amd64` images at once and either
+load them to the local docker registry or push them to the `gerritcodereview`dockerhub account.
+In order to do that one simply calls:
+
+```
+./build_multiplatform.sh --load
+```
+
+And multiplatform images will be created and loaded locally. Calling:
+
+```
+./build_multiplatform.sh --push
+```
+
+pushes images to the dockerhub instead.
+
+Notes:
+* in the `--load` target only the current system architecture image is pushed to the local
+  registry
+* almalinux image is additionally tagged as the default release image.
+
 ## Using persistent volumes
 
 Use docker persistent volumes to keep Gerrit data across restarts.
