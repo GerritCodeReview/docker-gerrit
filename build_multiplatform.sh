@@ -10,7 +10,7 @@ help() {
   echo "         into local docker registry (they are visible through the 'docker images'"
   echo "         command."
   echo "push     Builds both 'amd64' and 'arm64' architectures images and pushes them to the."
-  echo "         dockerhub. Note that in this case one needs to be loged in to"
+  echo "         dockerhub. Note that in this case one needs to be logged in to"
   echo "         'gerritcodereview' account and images are not visible in the local registry."
   echo
 }
