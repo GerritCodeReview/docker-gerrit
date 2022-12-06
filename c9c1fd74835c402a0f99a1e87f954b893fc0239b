@@ -145,6 +145,24 @@
       "parentUuid": "f694dc9b_23707f86",
       "revId": "c9c1fd74835c402a0f99a1e87f954b893fc0239b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c6da28d_9acb47c8",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2022-12-06T23:31:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "372dcea7_a2b9a761",
+      "revId": "c9c1fd74835c402a0f99a1e87f954b893fc0239b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
