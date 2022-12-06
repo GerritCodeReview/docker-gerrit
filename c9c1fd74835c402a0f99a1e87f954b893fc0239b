@@ -26,6 +26,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "df231e2b_249bba4a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-12-06T16:42:21Z",
+      "side": 1,
+      "message": "Done - added footer `Follow-up-to`",
+      "parentUuid": "0c410636_d4753bc7",
+      "range": {
+        "startLine": 7,
+        "startChar": 14,
+        "endLine": 7,
+        "endChar": 57
+      },
+      "revId": "c9c1fd74835c402a0f99a1e87f954b893fc0239b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "5cec4b6e_08e2c700",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
@@ -64,6 +88,30 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b10ba865_f79ba373",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-12-06T16:42:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a626ba1c_0413da83",
+      "range": {
+        "startLine": 65,
+        "startChar": 58,
+        "endLine": 65,
+        "endChar": 63
+      },
+      "revId": "c9c1fd74835c402a0f99a1e87f954b893fc0239b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f694dc9b_23707f86",
@@ -77,6 +125,24 @@
       "writtenOn": "2022-12-06T08:24:24Z",
       "side": 1,
       "message": "nit: need wrapping",
+      "revId": "c9c1fd74835c402a0f99a1e87f954b893fc0239b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "372dcea7_a2b9a761",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-12-06T16:42:21Z",
+      "side": 1,
+      "message": "to `80` chars? if yes then I would better address it as a follow up as there are lines for `~102` characters long there...",
+      "parentUuid": "f694dc9b_23707f86",
       "revId": "c9c1fd74835c402a0f99a1e87f954b893fc0239b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
