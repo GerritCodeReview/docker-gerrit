@@ -16,6 +16,29 @@
       "message": "@luca thanks for the review 😊",
       "revId": "de4778ee834155620991231f45f85d218f05dafc",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8f07e774_cf0fafc9",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1063024
+      },
+      "writtenOn": "2022-12-16T15:46:48Z",
+      "side": 1,
+      "message": "Nit: Typo `logged`. As we already have a follow-up commit for this [1] this could be addressed there.\n\n[1] https://gerrit-review.googlesource.com/c/docker-gerrit/+/353614",
+      "range": {
+        "startLine": 13,
+        "startChar": 67,
+        "endLine": 13,
+        "endChar": 72
+      },
+      "revId": "de4778ee834155620991231f45f85d218f05dafc",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ],
   "submitRequirementResults": [
