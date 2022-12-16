@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9547fb7_3a46333d",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1063024
+      },
+      "writtenOn": "2022-12-16T15:44:10Z",
+      "side": 1,
+      "message": "Good spot ++",
+      "range": {
+        "startLine": 65,
+        "startChar": 58,
+        "endLine": 65,
+        "endChar": 63
+      },
+      "revId": "2eec2007c64f96904c5ddfa5dc89372cfbc9d04a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ce6ec97_ab78ae89",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1063024
+      },
+      "writtenOn": "2022-12-16T15:44:10Z",
+      "side": 1,
+      "message": "Nit: Missing space between `gerritcodereview` and `dockerhub`.",
+      "range": {
+        "startLine": 66,
+        "startChar": 59,
+        "endLine": 66,
+        "endChar": 86
+      },
+      "revId": "2eec2007c64f96904c5ddfa5dc89372cfbc9d04a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc605cf1_3a3954d9",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1063024
+      },
+      "writtenOn": "2022-12-16T15:44:10Z",
+      "side": 1,
+      "message": "Nit: should be `the almalinux image`.",
+      "revId": "2eec2007c64f96904c5ddfa5dc89372cfbc9d04a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
