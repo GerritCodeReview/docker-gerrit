@@ -22,6 +22,30 @@
       },
       "revId": "3d7b2d385ad04d229f2f03d257e27ce5e6823a9b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3ec712f_b69849ad",
+        "filename": "build_multiplatform.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1063024
+      },
+      "writtenOn": "2022-12-17T14:08:29Z",
+      "side": 1,
+      "message": "Nice one.",
+      "parentUuid": "a128c6c9_3db7c53f",
+      "range": {
+        "startLine": 13,
+        "startChar": 67,
+        "endLine": 13,
+        "endChar": 73
+      },
+      "revId": "3d7b2d385ad04d229f2f03d257e27ce5e6823a9b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
