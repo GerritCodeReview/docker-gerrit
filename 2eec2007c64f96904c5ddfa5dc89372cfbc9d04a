@@ -47,6 +47,30 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d34bb24_a75a79b6",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-12-17T13:53:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8ce6ec97_ab78ae89",
+      "range": {
+        "startLine": 66,
+        "startChar": 59,
+        "endLine": 66,
+        "endChar": 86
+      },
+      "revId": "2eec2007c64f96904c5ddfa5dc89372cfbc9d04a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cc605cf1_3a3954d9",
@@ -60,6 +84,24 @@
       "writtenOn": "2022-12-16T15:44:10Z",
       "side": 1,
       "message": "Nit: should be `the almalinux image`.",
+      "revId": "2eec2007c64f96904c5ddfa5dc89372cfbc9d04a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f0e1aad_50a7cf17",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2022-12-17T13:53:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cc605cf1_3a3954d9",
       "revId": "2eec2007c64f96904c5ddfa5dc89372cfbc9d04a",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
