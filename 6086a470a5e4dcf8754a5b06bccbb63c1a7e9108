@@ -24,6 +24,30 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "381ac10e_bf96747b",
+        "filename": "almalinux/8/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2023-02-21T13:17:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0b7a8e15_59ce4024",
+      "range": {
+        "startLine": 13,
+        "startChar": 32,
+        "endLine": 13,
+        "endChar": 33
+      },
+      "revId": "6086a470a5e4dcf8754a5b06bccbb63c1a7e9108",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aeed5987_3920cd6d",
@@ -37,6 +61,30 @@
       "writtenOn": "2023-02-21T12:59:13Z",
       "side": 1,
       "message": "This should be `1`",
+      "range": {
+        "startLine": 19,
+        "startChar": 36,
+        "endLine": 19,
+        "endChar": 37
+      },
+      "revId": "6086a470a5e4dcf8754a5b06bccbb63c1a7e9108",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1745250_b067f1e7",
+        "filename": "ubuntu/20/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2023-02-21T13:17:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aeed5987_3920cd6d",
       "range": {
         "startLine": 19,
         "startChar": 36,
