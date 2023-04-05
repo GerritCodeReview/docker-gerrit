@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8463c31a_3936a16e",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2023-04-05T00:17:56Z",
+      "side": 1,
+      "message": "rc",
+      "range": {
+        "startLine": 13,
+        "startChar": 33,
+        "endLine": 13,
+        "endChar": 34
+      },
+      "revId": "2855652a76a7ea93b6b181dc8f5cfc335185b3be",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
