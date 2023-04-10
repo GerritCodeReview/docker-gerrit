@@ -67,11 +67,11 @@ VERSION=${VERSION:1}
 
 echo
 echo "### Building almalinux multi-platform: [$PLATFORMS] iamges"
-(cd almalinux/9 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux8" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
+(cd almalinux/9 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux9" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
 
 echo
 echo "### Building ubuntu multi-platform: [$PLATFORMS] iamges"
-(cd ubuntu/22 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu20" "$DESTINATION" .)
+(cd ubuntu/22 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu22" "$DESTINATION" .)
 
 echo
 echo "### Removing multi-platform builder"
