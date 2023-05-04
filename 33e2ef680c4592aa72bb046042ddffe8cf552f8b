@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2a8472e_81d51f1c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-05-04T18:41:09Z",
+      "side": 1,
+      "message": "it seems like the version of README.md published on docker-hub is behind the version from the repo (i.e. the version before my new changes).",
+      "revId": "33e2ef680c4592aa72bb046042ddffe8cf552f8b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
