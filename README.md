@@ -1,7 +1,8 @@
 # Gerrit Code Review docker image
 
-The official Gerrit Code Review image with an out-of-the-box setup
-with H2 and DEVELOPMENT account setup.
+The official Gerrit Code Review image with an
+[out-of-the-box](https://gerrit.googlesource.com/plugins/out-of-the-box/)
+setup with H2 and DEVELOPMENT account setup.
 
 This image is intended to be used AS-IS for training or staging environments.
 It can be used for production as base image and requires customizations to its gerrit.config
@@ -111,8 +112,15 @@ volumes:
   cache-volume:
 ```
 
-
 Run ```docker-compose up``` to trigger the build and execution of your custom Gerrit docker setup.
+
+Note that the path `/var/gerrit/etc` may also be externally-mounted. If this is done, then
+the config file `/var/gerrit/etc/gerrit.config` initialized by the Gerrit deb/rpm
+package inside the container will no longer be available.  If gerrit does not find an existing
+`gerrit.config` file under the externally-mounted path, then it generates a new one.  Note that the
+newly generated config file does not provide the same first-run behaviour as the one from the
+deb/rpm package (the out-of-the-box plugin is not configured, and the introductory screen of
+the plugin-manager will not appear).
 
 ## Environment variables
 
