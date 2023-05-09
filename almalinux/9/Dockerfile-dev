@@ -9,7 +9,7 @@ RUN yum -y install \
     openssh-clients \
     initscripts \
     sudo \
-    java-11-openjdk \
+    java-17-openjdk \
     git && \
     yum -y clean all
 
