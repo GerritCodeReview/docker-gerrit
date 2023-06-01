@@ -1,57 +1,62 @@
-# Gerrit Code Review docker image
+# Gerrit Code Review docker images
 
-The official Gerrit Code Review image with an
-[out-of-the-box](https://gerrit.googlesource.com/plugins/out-of-the-box/)
-setup with H2 and DEVELOPMENT account setup.
+These images provide official Gerrit Code Review releases using the
+DEB/RPM packages available from the
+[GerritForge repositories](https://gitenterprise.me/2015/02/27/gerrit-2-10-rpm-and-debian-packages-available/).
+The DEB/RPM packages contain the release `gerrit.war` file along with additional configuration files that
+provide an [out-of-the-box](https://gerrit.googlesource.com/plugins/out-of-the-box/) setup.
 
-This image is intended to be used AS-IS for training or staging environments.
-It can be used for production as base image and requires customizations to its gerrit.config
-and definition of persistent external modules.
+Each image is intended to be used AS-IS for training or staging environments.
+
+For production environments, the images provide a base on which required customizations
+to `gerrit.config` and persistent external modules can be made.
 
 ## Quickstart
 
-Start Gerrit Code Review in its demo/staging out-of-the-box setup:
+Start Gerrit Code Review in its demo/staging "out-of-the-box" setup like so:
 
 ```
-docker run -ti -p 8080:8080 -p 29418:29418 gerritcodereview/gerrit
+docker run -ti -p 8080:8080 -p 29418:29418 docker.io/gerritcodereview/gerrit
 ```
 
-Wait a few minutes until the ```Gerrit Code Review NNN ready``` message appears,
+Wait a few minutes until the `Gerrit Code Review NNN ready` message appears,
 where NNN is your current Gerrit version, then open your browser to http://localhost:8080
 and you will be in Gerrit Code Review.
 
-*NOTE*: If your docker server is running on a remote host, change 'localhost' to the hostname
-or IP address of your remote docker server.
+*NOTE*: If your docker server is running on a remote host, change 'localhost' to
+the hostname or IP address of your remote docker server.
 
-Starting from Ver. 2.14, a new introduction screen guides you through the basics of Gerrit
-and allows installing additional plugins downloaded from [Gerrit CI](https://gerrit-ci.gerritforge.com).
+The [plugin-manager](https://gerrit.googlesource.com/plugins/plugin-manager/) introduction screen
+guides you through the basics of Gerrit and allows installation of additional plugins downloaded from
+[Gerrit CI](https://gerrit-ci.gerritforge.com).
 
-Official releases are also available as Docker images, e.g. use the following to run the 3.3.0 version.
+Images for previous Gerrit Code Review releases are available; e.g. to run version 3.3.0,
+use the following command:
 
 ```
-docker run -ti -p 8080:8080 -p 29418:29418 gerritcodereview/gerrit:3.3.0
+docker run -ti -p 8080:8080 -p 29418:29418 docker.io/gerritcodereview/gerrit:3.3.0
 ```
 
-## Build docker image
+## Build docker images
 
-For docker images that contain released Gerrit versions, tags exist in this git repository pointing
-to a state of the repository, where this version of Gerrit (e.g. 3.3.0) is referenced in the
-Dockerfiles. To build such a docker image for development purposes, checkout the respective version
-tag, e.g.:
+To build docker images, clone the git repository https://gerrit.googlesource.com/docker-gerrit.
+
+Release tags are available and can be used to build particular releases.  E.g. to build an
+image using Gerrit 3.3.0, checkout the respective tag:
 
 ```
 git checkout v3.3.0
 ```
 
-Navigate to either `./almalinux/9` or `./ubuntu/22` to build the almalinux- or ubuntu-based docker
-image, respectively. Then run:
+Navigate to either `./almalinux/9` or `./ubuntu/22` to build the almalinux- or ubuntu-based
+docker image. Then run:
 
 ```
 docker build -t gerritcodereview/gerrit:$(git describe) .
 ```
 
-To build an image containing a development build of Gerrit, e.g. to test a change, run the following
-command instead:
+To build an image containing a development build of Gerrit (e.g. to test a change), run the
+following command instead:
 
 ```
 docker build --build-arg GERRIT_WAR_URL="<url>" -t gerritcodereview/gerrit -f Dockerfile-dev .
@@ -65,7 +70,7 @@ branch on the [Gerrit CI](https://gerrit-ci.gerritforge.com).
 
 For the official releases one can build both `amd64` and `arm64` images at once and either
 load them to the local docker registry or push them to the `gerritcodereview` dockerhub account.
-In order to do that one simply calls:
+In order to do that, one simply calls:
 
 ```
 ./build_multiplatform.sh --load
@@ -77,7 +82,7 @@ And multiplatform images will be created and loaded locally. Calling:
 ./build_multiplatform.sh --push
 ```
 
-pushes images to the dockerhub instead.
+pushes images to docker-hub instead.
 
 Notes:
 * in the `--load` target only the current system architecture image is pushed to the local
@@ -87,17 +92,15 @@ Notes:
 ## Using persistent volumes
 
 Use docker persistent volumes to keep Gerrit data across restarts.
-See below a sample docker-compose.yaml per externally-mounted Lucene indexes,
+Below is a sample `docker-compose.yaml` with externally-mounted Lucene indexes,
 Caches and Git repositories.
-
-Example of /docker-compose.yaml
 
 ```yaml
 version: '3'
 
 services:
   gerrit:
-    image: gerritcodereview/gerrit
+    image: docker.io/gerritcodereview/gerrit
     volumes:
        - git-volume:/var/gerrit/git
        - index-volume:/var/gerrit/index
@@ -112,14 +115,15 @@ volumes:
   cache-volume:
 ```
 
-Run ```docker-compose up``` to trigger the build and execution of your custom Gerrit docker setup.
+Run `docker compose up` (or `docker-compose up` with older versions of
+Docker) to trigger the build and execution of your container.
 
 Note that the path `/var/gerrit/etc` may also be externally-mounted. If this is done, then
-the config file `/var/gerrit/etc/gerrit.config` initialized by the Gerrit deb/rpm
+the config file `/var/gerrit/etc/gerrit.config` initialized by the Gerrit DEB/RPM
 package inside the container will no longer be available.  If gerrit does not find an existing
-`gerrit.config` file under the externally-mounted path, then it generates a new one.  Note that the
+`gerrit.config` file under the externally-mounted path, then it generates a new one.  However, the
 newly generated config file does not provide the same first-run behaviour as the one from the
-deb/rpm package (the out-of-the-box plugin is not configured, and the introductory screen of
+DEB/RPM package (the out-of-the-box plugin is not configured, and the introductory screen of
 the plugin-manager will not appear).
 
 ## Environment variables
@@ -134,20 +138,19 @@ Defaults to `http://<image_hostname>`
 
 When running Gerrit on Docker in production, it is a good idea to rely on a physical external
 storage with much better performance and reliability than the Docker's internal AUFS, and an external
-configuration directory for better change management traceability. Additionally,
-you may want to use a proper external authentication.
+configuration directory (`etc`) for better change management traceability. Additionally,
+you may want to use a proper external authentication (e.g. ldap).
 
-See below a more advanced example of docker-compose.yaml with OpenLDAP
-(from Osixia's DockerHub).
-
-Example of /docker-compose.yaml assuming you have an external directory available as /external/gerrit
+A more advanced `docker-compose.yaml` example is given below, which uses OpenLDAP
+(published by Osixia on Docker Hub).  The example assumes you have an external directory
+available as `/external/gerrit`
 
 ```yaml
 version: '3'
 
 services:
   gerrit:
-    image: gerritcodereview/gerrit
+    image: docker.io/gerritcodereview/gerrit
     ports:
       - "29418:29418"
       - "80:8080"
@@ -164,7 +167,7 @@ services:
     # command: init
 
   ldap:
-    image: osixia/openldap
+    image: docker.io/osixia/openldap
     ports:
       - "389:389"
       - "636:636"
@@ -175,14 +178,14 @@ services:
       - /external/gerrit/ldap/etc:/etc/ldap/slapd.d
 
   ldap-admin:
-    image: osixia/phpldapadmin
+    image: docker.io/osixia/phpldapadmin
     ports:
       - "6443:443"
     environment:
       - PHPLDAPADMIN_LDAP_HOSTS=ldap
 ```
 
-Example of /external/gerrit/etc/gerrit.config
+Example of `/external/gerrit/etc/gerrit.config`
 
 ```
 [gerrit]
@@ -219,7 +222,7 @@ Example of /external/gerrit/etc/gerrit.config
   user = root
 ```
 
-Example of /external/gerrit/etc/secure.config
+Example of `/external/gerrit/etc/secure.config`
 ```
 [ldap]
   password = secret
@@ -235,22 +238,22 @@ The initialization can be done as a one-off operation before starting all contai
 
 #### Step-1: Run Gerrit docker init setup from docker
 
-Uncomment the `command: init` option in docker-compose.yaml and run Gerrit with docker-compose
+Uncomment the `command: init` option in `docker-compose.yaml` and run Gerrit with `docker compose`
 in foreground.
 
 ```
-docker-compose up gerrit
+docker compose up gerrit
 ```
 
-Wait until you see in the output the message ```Initialized /var/gerrit``` and then the container
+Wait until you see in the output the message `Initialized /var/gerrit` and then the container
 will exit.
 
 #### Step-2: Start Gerrit in daemon mode
 
-Comment out the `command: init` option in docker-compose.yaml and start all the docker-compose nodes:
+Comment out the `command: init` option in `docker-compose.yaml` and start all the nodes:
 
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 ### Registering users in OpenLDAP with PhpLdapAdmin
@@ -263,7 +266,7 @@ that you configure it on LDAP to login and having the ability to administer your
 
 #### Define the Gerrit administrator in OpenLDAP
 
-Login to PhpLdapAdmin using ```cn=admin,dc=example,dc=org``` as username and ```secret``` as password
+Login to PhpLdapAdmin using `cn=admin,dc=example,dc=org` as username and `secret` as password
 and then create a new child node of type "Courier Mail Account" for the Gerrit Administrator
 
 Example:
