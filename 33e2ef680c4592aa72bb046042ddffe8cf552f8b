@@ -26,6 +26,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "a39883bb_f9f95807",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-01T04:23:27Z",
+      "side": 1,
+      "message": "Thanks for taking a look.\n\nI agree it is better to split things.\n\nI\u0027ve just pushed a new revision that addresses only what I was initially concerned about; i.e. that adding an external-mount can change gerrit\u0027s first-run behaviour.\n\nI have separated the other changes into another review (but that review is dependent on this one).",
+      "parentUuid": "cc4953f0_9ac51998",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 61
+      },
+      "revId": "33e2ef680c4592aa72bb046042ddffe8cf552f8b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "d2a8472e_81d51f1c",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
