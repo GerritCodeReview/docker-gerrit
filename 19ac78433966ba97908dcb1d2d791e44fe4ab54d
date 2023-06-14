@@ -16,6 +16,23 @@
       "message": "does anyone have 5 mins to review this?\n\nif you diff \"Base\" against \"Patchset 2\", then you can see that I have added a url and a new paragraph.\n\nif you are not interested in reviewing this, then could you perhaps suggest an alternate reviewer?",
       "revId": "19ac78433966ba97908dcb1d2d791e44fe4ab54d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3f89d6f_e00df3c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-14T13:48:49Z",
+      "side": 1,
+      "message": "thank-you for the Code-Review +2.\n\nI just need a Verified +1 now (unless I am able to apply that myself).",
+      "revId": "19ac78433966ba97908dcb1d2d791e44fe4ab54d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
