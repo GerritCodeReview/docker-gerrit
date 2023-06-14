@@ -26,6 +26,47 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4ee65cd1_e552a350",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-14T16:09:31Z",
+      "side": 1,
+      "message": "On their web page, I see they use \"Docker Hub\".  Are you okay with that instead of \"dockerhub\"?",
+      "parentUuid": "a3e88851_5638d44f",
+      "range": {
+        "startLine": 9,
+        "startChar": 37,
+        "endLine": 9,
+        "endChar": 47
+      },
+      "revId": "55216a53af52fb1b2caa92cc5a3d81c51bc2dfe4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95a364e3_bd1b97a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-14T16:09:31Z",
+      "side": 1,
+      "message": "thanks very much, Luca, for taking a look.\n\nI will push an update soon.",
+      "revId": "55216a53af52fb1b2caa92cc5a3d81c51bc2dfe4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "36431c05_c121861a",
         "filename": "README.md",
         "patchSetId": 1
@@ -49,6 +90,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c4991a60_020e1fdd",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-14T16:09:31Z",
+      "side": 1,
+      "message": "agreed.  I will re-word.",
+      "parentUuid": "36431c05_c121861a",
+      "range": {
+        "startLine": 3,
+        "startChar": 58,
+        "endLine": 4,
+        "endChar": 79
+      },
+      "revId": "55216a53af52fb1b2caa92cc5a3d81c51bc2dfe4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5cee169b_569a3c5c",
         "filename": "README.md",
         "patchSetId": 1
@@ -60,6 +125,30 @@
       "writtenOn": "2023-06-14T15:18:37Z",
       "side": 1,
       "message": "3.3.0 is largely obsolete. It would be best update with 3.8.0, maybe in a follow-up change.",
+      "range": {
+        "startLine": 30,
+        "startChar": 83,
+        "endLine": 30,
+        "endChar": 88
+      },
+      "revId": "55216a53af52fb1b2caa92cc5a3d81c51bc2dfe4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "65b051ad_9535f7f9",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-14T16:09:31Z",
+      "side": 1,
+      "message": "okay. I will open a new review for that.",
+      "parentUuid": "5cee169b_569a3c5c",
       "range": {
         "startLine": 30,
         "startChar": 83,
@@ -106,6 +195,30 @@
       "writtenOn": "2023-06-14T15:18:37Z",
       "side": 1,
       "message": "`build` was more appropriate.",
+      "range": {
+        "startLine": 115,
+        "startChar": 43,
+        "endLine": 115,
+        "endChar": 51
+      },
+      "revId": "55216a53af52fb1b2caa92cc5a3d81c51bc2dfe4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3827b723_76ade191",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-14T16:09:31Z",
+      "side": 1,
+      "message": "I used \"creation\" to avoid confusion with the previous subsection, \"Build multi-platform images\", but I see in the docker-compose man page they use the verb \"build\" (as well as \"spin\" and \"create\").",
+      "parentUuid": "81f7f0fa_affeb293",
       "range": {
         "startLine": 115,
         "startChar": 43,
@@ -180,6 +293,30 @@
         "startChar": 41,
         "endLine": 237,
         "endChar": 48
+      },
+      "revId": "55216a53af52fb1b2caa92cc5a3d81c51bc2dfe4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c13c47b4_7fc12a18",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-14T16:09:31Z",
+      "side": 1,
+      "message": "I\u0027m happy to change this, but note that on my machine, the executable is named `docker-compose`.",
+      "parentUuid": "8240c35e_6cf22f97",
+      "range": {
+        "startLine": 237,
+        "startChar": 74,
+        "endLine": 237,
+        "endChar": 88
       },
       "revId": "55216a53af52fb1b2caa92cc5a3d81c51bc2dfe4",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
