@@ -30,11 +30,11 @@ The [plugin-manager](https://gerrit.googlesource.com/plugins/plugin-manager/) in
 guides you through the basics of Gerrit and allows installation of additional plugins downloaded from
 [Gerrit CI](https://gerrit-ci.gerritforge.com).
 
-Images for previous Gerrit Code Review releases are available; e.g. to run version 3.3.0,
+Images for previous Gerrit Code Review releases are available; e.g. to run version 3.8.0,
 use the following command:
 
 ```
-docker run -ti -p 8080:8080 -p 29418:29418 docker.io/gerritcodereview/gerrit:3.3.0
+docker run -ti -p 8080:8080 -p 29418:29418 docker.io/gerritcodereview/gerrit:3.8.0
 ```
 
 ## Build docker images
@@ -42,10 +42,10 @@ docker run -ti -p 8080:8080 -p 29418:29418 docker.io/gerritcodereview/gerrit:3.3
 To build docker images, clone the git repository https://gerrit.googlesource.com/docker-gerrit.
 
 Release tags are available and can be used to build particular releases.  E.g. to build an
-image using Gerrit 3.3.0, checkout the respective tag:
+image using Gerrit 3.8.0, checkout the respective tag:
 
 ```
-git checkout v3.3.0
+git checkout v3.8.0
 ```
 
 Navigate to either `./almalinux/9` or `./ubuntu/22` to build the almalinux- or ubuntu-based
