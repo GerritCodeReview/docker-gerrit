@@ -22,6 +22,30 @@
       },
       "revId": "f679e067be9b3a55580b345f7558c85aaaf77c6f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc11d6cf_77de8507",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-06-16T05:29:16Z",
+      "side": 1,
+      "message": "AFAIU it will not work without the change in question and we are referring to the release that misses this fix...",
+      "parentUuid": "47d5a5c0_3da41839",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 33
+      },
+      "revId": "f679e067be9b3a55580b345f7558c85aaaf77c6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
