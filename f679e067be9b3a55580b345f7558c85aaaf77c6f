@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47d5a5c0_3da41839",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2023-06-16T04:45:51Z",
+      "side": 1,
+      "message": "The last known issue was fixed in change 374575. The fix was merged from stable-3.7 to stable-3.8, bit no releases was done since then. Should we wait until 3.8.1 is conducted before merging this?",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 33
+      },
+      "revId": "f679e067be9b3a55580b345f7558c85aaaf77c6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
