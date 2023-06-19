@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ca6763c_5b6d024d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1146580
+      },
+      "writtenOn": "2023-06-19T17:23:44Z",
+      "side": 1,
+      "message": "Luca, could you please submit this when you have a minute?\n\nI think submitting this change will also cause its parent change to be submitted as well.",
+      "revId": "a3560b5c05b7be948c211a887ba05450fdae3f61",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
