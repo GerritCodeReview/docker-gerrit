@@ -46,6 +46,30 @@
       },
       "revId": "f679e067be9b3a55580b345f7558c85aaaf77c6f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c6a94769_796361ab",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2023-06-21T05:14:08Z",
+      "side": 1,
+      "message": "Right. It could work with the known workaround (jvm option), but a better approach would be to just wait until a new release is conducted with this fix included. Setting to WIP.",
+      "parentUuid": "fc11d6cf_77de8507",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 33
+      },
+      "revId": "f679e067be9b3a55580b345f7558c85aaaf77c6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
