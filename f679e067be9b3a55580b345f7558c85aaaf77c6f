@@ -70,6 +70,30 @@
       },
       "revId": "f679e067be9b3a55580b345f7558c85aaaf77c6f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06c0030a_96029a9d",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-07-18T06:45:41Z",
+      "side": 1,
+      "message": "The fix in question is a part of Gerrit `v3.8.1` release so I believe that we could merge it",
+      "parentUuid": "c6a94769_796361ab",
+      "range": {
+        "startLine": 13,
+        "startChar": 19,
+        "endLine": 13,
+        "endChar": 33
+      },
+      "revId": "f679e067be9b3a55580b345f7558c85aaaf77c6f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
