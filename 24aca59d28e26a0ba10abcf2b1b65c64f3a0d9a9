@@ -22,6 +22,30 @@
       },
       "revId": "24aca59d28e26a0ba10abcf2b1b65c64f3a0d9a9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d278ffe_4a2f3299",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 6
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2023-10-05T21:37:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "725158c2_c1ac2497",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 12
+      },
+      "revId": "24aca59d28e26a0ba10abcf2b1b65c64f3a0d9a9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
