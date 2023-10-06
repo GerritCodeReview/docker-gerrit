@@ -16,6 +16,24 @@
       "message": "I have created the image, started it and performed basic smoke tests (created repo, review etc.) in order to confirm that it works.",
       "revId": "afcd89b59b952e45f4908da627a1a53578bbe660",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04282ad8_ab7f8c15",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2023-10-06T17:06:39Z",
+      "side": 1,
+      "message": "👍",
+      "parentUuid": "8364b09e_7b9a98b4",
+      "revId": "afcd89b59b952e45f4908da627a1a53578bbe660",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
