@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM eclipse-temurin:17-jammy
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
@@ -13,10 +13,12 @@ RUN apt-get -y install sudo
 
 ADD entrypoint.sh /
 
-# Install OpenJDK and Gerrit in two subsequent transactions
-# (pre-trans Gerrit script needs to have access to the Java command)
-RUN apt-get -y install openjdk-17-jdk
-RUN apt-get -y install gerrit=3.9.0-0rc0 && \
+# Note that temurin does everything that is needed in order to install JDK but doesn't
+# update alternatives for java which is detected during the gerrit install step
+# hence it is the only extra step that had to be added
+RUN update-alternatives --install /usr/bin/java java $(which java) 2222 && \
+    apt-get -y upgrade && \
+    apt-get -y install gerrit=3.9.0-0rc0 && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
     bash -c 'rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/*' && \
