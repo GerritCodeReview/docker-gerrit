@@ -80,6 +80,30 @@
       },
       "revId": "afcd89b59b952e45f4908da627a1a53578bbe660",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5a8cdab_6acec447",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-10-07T06:52:34Z",
+      "side": 1,
+      "message": "Bummer https://adoptium.net/en-GB/blog/2023/09/temurin21-delay/ 😞",
+      "parentUuid": "3de6a562_16d1733f",
+      "range": {
+        "startLine": 1,
+        "startChar": 21,
+        "endLine": 1,
+        "endChar": 23
+      },
+      "revId": "afcd89b59b952e45f4908da627a1a53578bbe660",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
