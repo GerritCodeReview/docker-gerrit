@@ -163,6 +163,30 @@
       },
       "revId": "afcd89b59b952e45f4908da627a1a53578bbe660",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a7afad90_79589855",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-10-09T17:55:07Z",
+      "side": 1,
+      "message": "@luca there is an update (as of today) to the note in question:\n\n\u003e UPDATE Oct 9, 2023\nWe are pleased to report that we have now received the applicable Java Technology Compatibility Kit (TCK) that will ensure our Eclipse Temurin 21 releases are compliant with the relevant Java specifications.\n(...)\nSubject to successful completion of the TCK runs we expect to see the initial set of Temurin 21 GA platforms appear for download within a day or two.(...)\n\nIOW we should expect to get some images very soon. Hope that os JDK packages will follow too",
+      "parentUuid": "b5a8cdab_6acec447",
+      "range": {
+        "startLine": 1,
+        "startChar": 21,
+        "endLine": 1,
+        "endChar": 23
+      },
+      "revId": "afcd89b59b952e45f4908da627a1a53578bbe660",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
