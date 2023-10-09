@@ -26,6 +26,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "37399c9a_eeafdbad",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-10-09T19:45:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ccb76bbe_6b5a7392",
+      "range": {
+        "startLine": 10,
+        "startChar": 31,
+        "endLine": 10,
+        "endChar": 34
+      },
+      "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "c87a9b77_e046202b",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 2
@@ -54,6 +78,24 @@
       "writtenOn": "2023-10-09T18:41:38Z",
       "side": 1,
       "message": "nit: shall we also run `apt-get -uy dist-upgrade` to install the latest package versions, including security fixes?",
+      "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4875c305_8edd09b1",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-10-09T19:45:15Z",
+      "side": 1,
+      "message": "Tempting, but we are not even actively scanning images to detect any issues... IMO we have no process in place to fully embrace it as we only release when new minor versions get released IOW not very often... but I\u0027m open on more votes on that.\n\nbtw: If we agree I would rather stick to `upgrade` so that we avoid the release upgrades as it would be better to newer image instead. WDTY?",
+      "parentUuid": "500ec7cc_6cbc030f",
       "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
