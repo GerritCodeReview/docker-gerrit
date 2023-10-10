@@ -170,6 +170,24 @@
       "parentUuid": "c6a2e101_57a37498",
       "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "085ad8a7_f7ba2b20",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1010134
+      },
+      "writtenOn": "2023-10-10T09:05:23Z",
+      "side": 1,
+      "message": "unless the `/var/cache/apt` is mounted outside of the image, the `clean` should remove all downloaded deb (including Gerrit\u0027s deb package) which _should_ reduce the overall size",
+      "parentUuid": "a8cf8674_7fe24f5f",
+      "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
