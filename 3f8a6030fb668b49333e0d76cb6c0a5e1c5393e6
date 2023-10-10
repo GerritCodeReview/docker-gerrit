@@ -116,6 +116,24 @@
       "parentUuid": "4875c305_8edd09b1",
       "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e92be2f_fba43965",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-10-10T08:20:38Z",
+      "side": 1,
+      "message": "\u003e IMO, it is always good to upgrade, especially if that image is intended to be used by others as a long-running service.\nAlso, having a released stable image with known CVS\u0027s doesn\u0027t sound good.\n\nKind of agree as we cannot really enforce it as we are not actively building images on a regular basis... Having said I have added the upgrade step as it adds only ~20MB to the picture still resulting in smaller then before image.",
+      "parentUuid": "510d005f_a4cba2f3",
+      "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
