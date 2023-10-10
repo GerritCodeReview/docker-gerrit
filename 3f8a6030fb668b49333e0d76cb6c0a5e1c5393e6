@@ -134,6 +134,24 @@
       "parentUuid": "510d005f_a4cba2f3",
       "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c6a2e101_57a37498",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1010134
+      },
+      "writtenOn": "2023-10-10T08:23:43Z",
+      "side": 1,
+      "message": "we should also run `apt-get clean` at the end to remove downloaded debs. This should reduce size.",
+      "parentUuid": "8e92be2f_fba43965",
+      "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
