@@ -188,6 +188,24 @@
       "parentUuid": "a8cf8674_7fe24f5f",
       "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b66cb59_f0d24334",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-10-10T09:29:00Z",
+      "side": 1,
+      "message": "There is no need for `clean` as docker takes care of cleaning downloaded packages\n```\ncat /etc/apt/apt.conf.d/docker-clean \nDPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };\nAPT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };\nDir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";\n```",
+      "parentUuid": "a8cf8674_7fe24f5f",
+      "revId": "3f8a6030fb668b49333e0d76cb6c0a5e1c5393e6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
