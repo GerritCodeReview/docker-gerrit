@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5e55f04_1478a109",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2023-10-20T13:50:00Z",
+      "side": 1,
+      "message": "I need to double-check if eclipse-temurin is an Ubuntu image or not.",
+      "revId": "2724b6d09e402e47b0e92652e602e26403d2deb0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
