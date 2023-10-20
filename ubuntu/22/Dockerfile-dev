@@ -7,7 +7,7 @@ ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-baz
 RUN apt-get update && apt-get -y install \
     openssh-client \
     sudo \
-    openjdk-11-jdk \
+    openjdk-17-jdk \
     git && \
     rm -rf /var/lib/apt/lists/*
 
