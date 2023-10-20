@@ -16,6 +16,46 @@
       "message": "I need to double-check if eclipse-temurin is an Ubuntu image or not.",
       "revId": "2724b6d09e402e47b0e92652e602e26403d2deb0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ea6f83d_2319271a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2023-10-20T23:41:26Z",
+      "side": 1,
+      "message": "If this is a brand-new image, it should not be under `ubuntu/22` IMHO but another folder.",
+      "revId": "2724b6d09e402e47b0e92652e602e26403d2deb0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4f56f2c_f9f53570",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2023-10-20T23:41:26Z",
+      "side": 1,
+      "message": "Are you sure this is a variant of `ubuntu:22.04`?",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 29
+      },
+      "revId": "2724b6d09e402e47b0e92652e602e26403d2deb0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
