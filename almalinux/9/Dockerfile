@@ -1,4 +1,4 @@
-FROM almalinux:9.1
+FROM almalinux:9.2
 MAINTAINER Gerrit Code Review Community
 
 # Add Gerrit packages repository
@@ -10,7 +10,7 @@ ADD entrypoint.sh /
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN yum -y install initscripts && \
     yum -y install java-17-openjdk && \
-    yum -y install gerrit-3.8.2-1 && \
+    yum -y install gerrit-3.9.0-0rc0 && \
     /entrypoint.sh init && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit && \
     yum -y clean all
