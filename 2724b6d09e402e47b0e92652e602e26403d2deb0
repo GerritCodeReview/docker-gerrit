@@ -56,6 +56,30 @@
       },
       "revId": "2724b6d09e402e47b0e92652e602e26403d2deb0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb513979_b6ee7217",
+        "filename": "ubuntu/22/Dockerfile",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2023-10-21T07:18:55Z",
+      "side": 1,
+      "message": "yeap, here is the [confirmation](https://wiki.ubuntu.com/Releases)\n```\nUbuntu 22.04.3 LTS Jammy Jellyfish\n```",
+      "parentUuid": "b4f56f2c_f9f53570",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 29
+      },
+      "revId": "2724b6d09e402e47b0e92652e602e26403d2deb0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
