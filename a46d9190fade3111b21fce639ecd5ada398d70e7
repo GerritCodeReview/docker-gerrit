@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63ebff91_f69a1d12",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2023-11-21T08:56:20Z",
+      "side": 1,
+      "message": "Why not merging to stable-3.8? The branch was missing, I\u0027ve created it now.",
+      "revId": "a46d9190fade3111b21fce639ecd5ada398d70e7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
