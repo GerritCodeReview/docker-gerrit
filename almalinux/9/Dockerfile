@@ -1,8 +1,8 @@
 FROM almalinux:9.1
 MAINTAINER Gerrit Code Review Community
 
-# Add Gerrit packages repository
-RUN rpm -i https://gerritforge.com/gerritforge-repo-1-4.noarch.rpm
+# Update Almalinux GPG key - see https://almalinux.org/blog/2023-12-20-almalinux-8-key-update/
+RUN rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
 
 ADD entrypoint.sh /
 
