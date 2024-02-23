@@ -24,6 +24,30 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "59361d9d_caac9e48",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2024-02-23T22:49:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "50f6b0a3_49d8d05b",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 0
+      },
+      "revId": "30bfc298f209a1e8e85c78aeafba7faf1e753ceb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d171589b_f597f7c6",
@@ -37,6 +61,30 @@
       "writtenOn": "2024-02-23T22:48:59Z",
       "side": 1,
       "message": "This is only for Almalinux 8",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 0
+      },
+      "revId": "30bfc298f209a1e8e85c78aeafba7faf1e753ceb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4603e668_1c251915",
+        "filename": "almalinux/9/Dockerfile-dev",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2024-02-23T22:49:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d171589b_f597f7c6",
       "range": {
         "startLine": 4,
         "startChar": 0,
