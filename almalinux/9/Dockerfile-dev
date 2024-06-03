@@ -1,4 +1,4 @@
-FROM almalinux:9.2
+FROM almalinux:9.3
 MAINTAINER Gerrit Code Review Community
 
 # Allow remote connectivity and sudo and install OpenJDK and Git
