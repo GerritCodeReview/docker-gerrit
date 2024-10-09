@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aa31656a_3b6bc646",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2024-10-09T19:29:51Z",
+      "side": 1,
+      "message": "Did we forget to bump this up when we released 3.10.1?",
+      "revId": "52535014398ca3d3cc201a220ab74a13eba6bb41",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
