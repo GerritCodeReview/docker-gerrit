@@ -16,6 +16,24 @@
       "message": "Did we forget to bump this up when we released 3.10.1?",
       "revId": "52535014398ca3d3cc201a220ab74a13eba6bb41",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5b7eefe_e2d422ff",
+        "filename": "almalinux/9/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2024-10-10T08:30:29Z",
+      "side": 1,
+      "message": "The bump to v3.10.1 was made on the wrong branch, because master contained already an operating system bump for Almalinux.",
+      "parentUuid": "aa31656a_3b6bc646",
+      "revId": "52535014398ca3d3cc201a220ab74a13eba6bb41",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
