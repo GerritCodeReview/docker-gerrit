@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jammy
-MAINTAINER Gerrit Code Review Community
+LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
 
 # Install OpenJDK and Git and allow remote connectivity and sudo
 RUN apt-get update && apt-get -y install \

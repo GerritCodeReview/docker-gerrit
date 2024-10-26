@@ -71,7 +71,7 @@ echo "### Building almalinux multi-platform: [$PLATFORMS] iamges"
 
 echo
 echo "### Building ubuntu multi-platform: [$PLATFORMS] iamges"
-(cd ubuntu/22 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu22" "$DESTINATION" .)
+(cd ubuntu/24 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu24" "$DESTINATION" .)
 
 echo
 echo "### Removing multi-platform builder"
