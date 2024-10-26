@@ -1,5 +1,5 @@
 FROM almalinux:9.4
-MAINTAINER Gerrit Code Review Community
+LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
 
 # Allow remote connectivity and sudo and install OpenJDK and Git
 # (pre-trans Gerrit script needs to have access to the Java command)
@@ -7,7 +7,7 @@ RUN yum -y install \
     openssh-clients \
     initscripts \
     sudo \
-    java-17-openjdk \
+    java-21-openjdk \
     git && \
     yum -y clean all
 

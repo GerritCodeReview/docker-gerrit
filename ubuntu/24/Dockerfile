@@ -1,5 +1,5 @@
-FROM eclipse-temurin:17-jammy
-MAINTAINER Gerrit Code Review Community
+FROM eclipse-temurin:21.0.5_11-jdk-noble
+LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
 
 # Add Gerrit packages repository
 RUN apt-get update && \
@@ -18,7 +18,7 @@ ADD entrypoint.sh /
 # hence it is the only extra step that had to be added
 RUN update-alternatives --install /usr/bin/java java $(which java) 2222 && \
     apt-get -y upgrade && \
-    apt-get -y install gerrit=3.10.2-1 && \
+    apt-get -y install gerrit=3.11.0-0rc0 && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
     bash -c 'rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/*' && \
