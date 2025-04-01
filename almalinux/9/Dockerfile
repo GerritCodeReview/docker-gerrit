@@ -1,8 +1,9 @@
 FROM almalinux:9.4
 LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
 
-# Add Gerrit packages repository
+# Add Gerrit packages repository and the newest GPG key
 RUN rpm -i https://gerritforge.com/gerritforge-repo-1-4.noarch.rpm
+RUN rpm --import 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x72adb205736d7147da56e8c955787ed781304950'
 
 ADD entrypoint.sh /
 

@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
 RUN apt-get update && \
     apt-get -y install gnupg2
 RUN echo "deb mirror://mirrorlist.gerritforge.com/bionic gerrit contrib" > /etc/apt/sources.list.d/GerritForge.list
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 847005AE619067D5
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 55787ed781304950
 
 RUN apt-get update
 RUN apt-key update
