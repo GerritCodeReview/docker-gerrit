@@ -1,4 +1,4 @@
-FROM almalinux:9.4
+FROM almalinux:9.5
 LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
 
 # Add Gerrit packages repository and the newest GPG key
