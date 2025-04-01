@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21.0.5_11-jdk-noble
+FROM eclipse-temurin:21.0.6_7-jdk-noble
 LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
 
 # Add Gerrit packages repository
