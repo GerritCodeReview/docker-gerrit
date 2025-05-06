@@ -18,7 +18,7 @@ ADD entrypoint.sh /
 # hence it is the only extra step that had to be added
 RUN update-alternatives --install /usr/bin/java java $(which java) 2222 && \
     apt-get -y upgrade && \
-    apt-get -y install gerrit=3.12.0-0rc4 && \
+    apt-get -y install gerrit=3.12.0-0rc5 && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
     bash -c 'rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/*' && \
