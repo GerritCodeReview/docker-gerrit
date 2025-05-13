@@ -11,7 +11,7 @@ ADD entrypoint.sh /
 RUN yum -y install initscripts && \
     yum -y install java-21-openjdk
 
-RUN yum -y install gerrit-3.12.0-0rc5 && \
+RUN yum -y install gerrit-3.12.0-0rc6 && \
     /entrypoint.sh init && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit && \
     yum -y clean all
