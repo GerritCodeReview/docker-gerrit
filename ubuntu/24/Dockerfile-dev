@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jammy
+FROM eclipse-temurin:21.0.10_7-jdk-noble
 LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
 
 # Install OpenJDK and Git and allow remote connectivity and sudo
