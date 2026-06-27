@@ -1,5 +1,8 @@
-FROM almalinux:9.7
+FROM almalinux:10.2
 LABEL org.opencontainers.image.authors="luca.milanesio@gmail.com"
+
+# Enable LEGACY security policies by default (for TLS 1.0/1.1 compatibility)
+RUN update-crypto-policies --set LEGACY
 
 # Add Gerrit packages repository and the newest GPG key
 RUN rpm -i https://gerritforge.com/gerritforge-repo-1-5.noarch.rpm
@@ -15,9 +18,6 @@ RUN yum -y install gerrit-3.14.1-1 && \
     /entrypoint.sh init && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit && \
     yum -y clean all
-
-# Enable LEGACY security policies by default (for TLS 1.0/1.1 compatibility)
-RUN update-crypto-policies --set LEGACY
 
 USER gerrit
 
