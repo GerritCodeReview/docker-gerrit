@@ -67,7 +67,7 @@ VERSION=${VERSION:1}
 
 echo
 echo "### Building almalinux multi-platform: [$PLATFORMS] iamges"
-(cd almalinux/9 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux9" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
+(cd almalinux/10 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux10" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
 
 echo
 echo "### Building ubuntu multi-platform: [$PLATFORMS] iamges"
