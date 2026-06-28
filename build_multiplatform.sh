@@ -3,7 +3,9 @@
 help() {
   echo "Helper script to build single or multiplatform (depending on the input parameter)"
   echo "images for both almalinux and ubuntu distributions."
-  echo
+  echo "DOCKERFILE environment variable points to the name of the Dockerfile to use, which"
+  echo "is Dockerfile by default."
+  echo ""
   echo "Syntax: $0 [--load|--push]"
   echo "options:"
   echo "load     Builds single platform (of runner's system type) images and loads them into"
@@ -15,6 +17,7 @@ help() {
   echo
 }
 
+DOCKERFILE=${DOCKERFILE:-Dockerfile}
 DESTINATION=$1
 
 if ! [[ "$DESTINATION" =~ ^(--load|--push)$ ]]; then
@@ -67,11 +70,23 @@ VERSION=${VERSION:1}
 
 echo
 echo "### Building almalinux multi-platform: [$PLATFORMS] iamges"
+<<<<<<< PATCH SET (58972192c69c94a5e856ed516a6806088de2a799 Allow specifying the Dockerfile to use)
+(cd almalinux/9 && docker buildx build -f $DOCKERFILE --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux9" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
+||||||| BASE      (5cf6cc2e22c17bbdd9704f82540e3cd3d28c26b2 Create Gerrit directories eagerly in Dockerfile-dev)
+(cd almalinux/9 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux9" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
+=======
 (cd almalinux/10 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux10" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
+>>>>>>> BASE      (52259b254269fb53cabfdc3213ecc4fd22c5f1fe Create Gerrit directories eagerly in Dockerfile-dev)
 
 echo
 echo "### Building ubuntu multi-platform: [$PLATFORMS] iamges"
+<<<<<<< PATCH SET (58972192c69c94a5e856ed516a6806088de2a799 Allow specifying the Dockerfile to use)
+(cd ubuntu/24 && docker buildx build -f $DOCKERFILE --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu24" "$DESTINATION" .)
+||||||| BASE      (5cf6cc2e22c17bbdd9704f82540e3cd3d28c26b2 Create Gerrit directories eagerly in Dockerfile-dev)
+(cd ubuntu/24 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu24" "$DESTINATION" .)
+=======
 (cd ubuntu/26 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu26" "$DESTINATION" .)
+>>>>>>> BASE      (52259b254269fb53cabfdc3213ecc4fd22c5f1fe Create Gerrit directories eagerly in Dockerfile-dev)
 
 echo
 echo "### Removing multi-platform builder"
