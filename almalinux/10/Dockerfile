@@ -19,6 +19,11 @@ RUN yum -y install gerrit-3.14.1-1 && \
     rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/* && chown -R gerrit:gerrit /var/gerrit && \
     yum -y clean all
 
+# Java 25 detection isn't working properly, fixed in master with https://gerrit-review.googlesource.com/c/552261
+RUN yum -y erase java-21-openjdk && \
+    yum -y install java-25-openjdk && \
+    git config -f /var/gerrit/etc/gerrit.config container.javaHome /usr/lib/jvm/java-25-openjdk
+
 USER gerrit
 
 ENV CANONICAL_WEB_URL=
