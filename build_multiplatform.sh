@@ -3,7 +3,9 @@
 help() {
   echo "Helper script to build single or multiplatform (depending on the input parameter)"
   echo "images for both almalinux and ubuntu distributions."
-  echo
+  echo "DOCKERFILE environment variable points to the name of the Dockerfile to use, which"
+  echo "is Dockerfile by default."
+  echo ""
   echo "Syntax: $0 [--load|--push]"
   echo "options:"
   echo "load     Builds single platform (of runner's system type) images and loads them into"
@@ -15,6 +17,7 @@ help() {
   echo
 }
 
+DOCKERFILE=${DOCKERFILE:-Dockerfile}
 DESTINATION=$1
 
 if ! [[ "$DESTINATION" =~ ^(--load|--push)$ ]]; then
@@ -67,11 +70,11 @@ VERSION=${VERSION:1}
 
 echo
 echo "### Building almalinux multi-platform: [$PLATFORMS] iamges"
-(cd almalinux/10 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux10" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
+(cd almalinux/10 && docker buildx build -f $DOCKERFILE --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-almalinux10" -t "$DOCKER_USER:$VERSION" "$DESTINATION" .)
 
 echo
 echo "### Building ubuntu multi-platform: [$PLATFORMS] iamges"
-(cd ubuntu/26 && docker buildx build --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu26" "$DESTINATION" .)
+(cd ubuntu/26 && docker buildx build -f $DOCKERFILE --platform "$PLATFORMS" --no-cache -t "$DOCKER_USER:${VERSION}-ubuntu26" "$DESTINATION" .)
 
 echo
 echo "### Removing multi-platform builder"
