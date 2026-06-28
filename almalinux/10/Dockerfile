@@ -12,7 +12,7 @@ ADD entrypoint.sh /
 # Install OS pre-prequisites, OpenJDK and Gerrit in two subsequent transactions
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN yum -y install initscripts && \
-    yum -y install java-21-openjdk
+    yum -y install java-25-openjdk
 
 RUN yum -y install gerrit-3.14.1-1 && \
     /entrypoint.sh init && \
