@@ -10,9 +10,9 @@ RUN apt-get update && apt-get -y install \
 
 ADD entrypoint.sh /
 
-RUN adduser --disabled-password --gecos "" gerrit --home /home/gerrit && \
-    mkdir -p /var/gerrit/bin && \
-    chown -R gerrit /var/gerrit
+RUN bash -c 'adduser --disabled-password --gecos "" gerrit --home /home/gerrit && \
+    mkdir -p /var/gerrit/{bin,git,index,cache,db,etc} && \
+    chown -R gerrit /var/gerrit'
 USER gerrit
 ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
 ADD --chown=gerrit $GERRIT_WAR_URL  /var/gerrit/bin/gerrit.war

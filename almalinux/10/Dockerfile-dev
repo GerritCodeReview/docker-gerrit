@@ -14,7 +14,7 @@ RUN yum -y install \
 ADD entrypoint.sh /
 
 RUN adduser -m gerrit --home-dir /home/gerrit && \
-    mkdir -p /var/gerrit/bin && \
+    mkdir -p /var/gerrit/{bin,git,index,cache,db,etc} && \
     chown -R gerrit /var/gerrit
 USER gerrit
 ARG GERRIT_WAR_URL="https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/lastSuccessfulBuild/artifact/gerrit/bazel-bin/release.war"
