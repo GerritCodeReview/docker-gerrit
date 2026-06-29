@@ -16,6 +16,24 @@
       "message": "question: not sure if I follow - jdk21 was just installed in line #18, there is jdk25 already part of the image, do we need 21 too?",
       "revId": "e8cc0f0521725b1dcb6e9dd93f3487825eee5b65",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d757fe87_8e8abdea",
+        "filename": "ubuntu/26/Dockerfile",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2026-06-29T11:10:38Z",
+      "side": 1,
+      "message": "Unfortunately, yes, because of the JVM version detection bug in the Gerrit package. Once that\u0027s fixed, we can get rid of Java 21 altogether.",
+      "parentUuid": "f866a82b_b537d46f",
+      "revId": "e8cc0f0521725b1dcb6e9dd93f3487825eee5b65",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
