@@ -22,6 +22,30 @@
       },
       "revId": "52259b254269fb53cabfdc3213ecc4fd22c5f1fe",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6fc2e2d9_832024e0",
+        "filename": "ubuntu/26/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2026-06-29T05:33:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9fc492cc_a453025a",
+      "range": {
+        "startLine": 14,
+        "startChar": 4,
+        "endLine": 14,
+        "endChar": 53
+      },
+      "revId": "52259b254269fb53cabfdc3213ecc4fd22c5f1fe",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
