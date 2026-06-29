@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f866a82b_b537d46f",
+        "filename": "ubuntu/26/Dockerfile",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2026-06-29T08:14:29Z",
+      "side": 1,
+      "message": "question: not sure if I follow - jdk21 was just installed in line #18, there is jdk25 already part of the image, do we need 21 too?",
+      "revId": "e8cc0f0521725b1dcb6e9dd93f3487825eee5b65",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
