@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9fc492cc_a453025a",
+        "filename": "ubuntu/26/Dockerfile-dev",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2026-06-29T05:30:42Z",
+      "side": 1,
+      "message": "On Ubuntu this isn\u0027t expanded: it should invoke `bash` explicitly",
+      "range": {
+        "startLine": 14,
+        "startChar": 4,
+        "endLine": 14,
+        "endChar": 53
+      },
+      "revId": "52259b254269fb53cabfdc3213ecc4fd22c5f1fe",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
