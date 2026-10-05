@@ -17,7 +17,7 @@ ADD entrypoint.sh /
 
 RUN apt-get -y install openjdk-21-jdk && \
     apt-get -y upgrade && \
-    apt-get -y install gerrit=3.14.1-1 && \
+    apt-get -y install gerrit=3.15.0-rc0 && \
     apt-get -y remove openjdk-21-jdk && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
