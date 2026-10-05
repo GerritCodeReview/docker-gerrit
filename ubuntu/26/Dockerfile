@@ -15,10 +15,9 @@ RUN apt-get -y install sudo
 
 ADD entrypoint.sh /
 
-RUN apt-get -y install openjdk-21-jdk && \
-    apt-get -y upgrade && \
+RUN apt-get -y upgrade && \
+    apt-get -y install openjdk-25-jdk && \
     apt-get -y install gerrit=3.15.0-0rc0 && \
-    apt-get -y remove openjdk-21-jdk && \
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
     bash -c 'rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/*' && \
