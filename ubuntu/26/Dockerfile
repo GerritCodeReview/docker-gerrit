@@ -15,10 +15,20 @@ RUN apt-get -y install sudo
 
 ADD entrypoint.sh /
 
+<<<<<<< PATCH SET (63e3619a253cee0c33d2f4e920776d69e493f48e Remove Java 21 on Ubuntu 26)
+RUN apt-get -y upgrade && \
+    apt-get -y install gerrit=3.15.0-rc0 && \
+||||||| BASE      (4aa28a90a34c127d8487260a84e8003aa2c21c99 Set Gerrit to 3.15.0-rc0)
+RUN apt-get -y install openjdk-21-jdk && \
+    apt-get -y upgrade && \
+    apt-get -y install gerrit=3.15.0-rc0 && \
+    apt-get -y remove openjdk-21-jdk && \
+=======
 RUN apt-get -y install openjdk-21-jdk && \
     apt-get -y upgrade && \
     apt-get -y install gerrit=3.15.0-0rc0 && \
     apt-get -y remove openjdk-21-jdk && \
+>>>>>>> BASE      (c2c75ef1873b4a7eb4e443a4326c62afc23ccbc2 Set Gerrit to 3.15.0-rc0)
     apt-mark hold gerrit && \
     /entrypoint.sh init && \
     bash -c 'rm -f /var/gerrit/etc/{ssh,secure}* && rm -Rf /var/gerrit/{static,index,logs,data,index,cache,git,db,tmp}/*' && \
