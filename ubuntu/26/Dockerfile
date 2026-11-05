@@ -10,7 +10,7 @@ RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 55787ed781304950 && \
     chmod 644 /etc/apt/keyrings/gerritforge.gpg
 RUN echo "deb [signed-by=/etc/apt/keyrings/gerritforge.gpg] mirror://mirrorlist.gerritforge.com/bionic gerrit contrib" > /etc/apt/sources.list.d/GerritForge.list
 
-RUN apt-get update
+RUN apt-get update && apt-get upgrade -y
 RUN apt-get -y install sudo
 
 ADD entrypoint.sh /
