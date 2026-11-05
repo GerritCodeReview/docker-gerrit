@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5daddc4_2d387ce9",
+        "filename": "ubuntu/26/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1025452
+      },
+      "writtenOn": "2026-11-05T18:45:23Z",
+      "side": 1,
+      "message": "nit: perhaps we could bump to the [eclipse-temurin:25.0.5_8-jdk-resolute](https://hub.docker.com/layers/library/eclipse-temurin/25.0.5_8-jdk-resolute/images/sha256-952ae4db91699d916ee219f7830c424022c9eb8792d35899af97316b8000a078) release too? could be done in the follow-up, so that it is not immediately upgraded in line 19 😊",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 42
+      },
+      "revId": "f20768e390db46890f3f83b91922dec0f56b5514",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
