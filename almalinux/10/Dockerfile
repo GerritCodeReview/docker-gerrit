@@ -9,6 +9,9 @@ RUN rpm -i https://gerritforge.com/gerritforge-repo-1-5.noarch.rpm
 
 ADD entrypoint.sh /
 
+# Upgrade all packages
+RUN dnf update -y
+
 # Install OS pre-prequisites, OpenJDK and Gerrit in two subsequent transactions
 # (pre-trans Gerrit script needs to have access to the Java command)
 RUN yum -y install initscripts && \
