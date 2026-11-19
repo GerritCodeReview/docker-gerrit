@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41014637_5e4510b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2026-11-19T19:25:52Z",
+      "side": 1,
+      "message": "Looks like this should be abandoned in favour of https://gerrit-review.googlesource.com/c/docker-gerrit/+/658843 ?",
+      "revId": "8188ba9b4717343965751f26e4dc16d860c347b1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
